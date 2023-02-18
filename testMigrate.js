@@ -160,7 +160,18 @@ area.appendChild(top);
 	// 	})
 	
 	
+	var prefixFrame=document.createElement('div');
 	
+	prefixFrame.style.position='absolute';
+	prefixFrame.style.left='42%';
+	prefixFrame.style.top='25%';
+	prefixFrame.style.height='63%';
+	prefixFrame.style.width='12%';
+	prefixFrame.style.paddingRight='0%',
+	prefixFrame.style.border='4px solid green';
+	prefixFrame.style.borderRadius='2px';
+	
+	area.appendChild(prefixFrame);
 	
 	var bottom=document.createElement('div');
 
@@ -306,14 +317,16 @@ area.appendChild(top);
 	addFloatingBox2(89.5,82.5,w,h,'ir',area,bottom,'rgb(158,206,220)',"v");
 	addFloatingBox2(95,82.5,w,h,'or',area,bottom,'rgb(158,206,220)',"v");
 	
-	addFloatingBox2(43,42.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(48.5,42.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(43,54.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(43,27.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(48.5,27.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(43,42.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(48.5,42.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(43,54.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
 	addFloatingBox2(48.5,54.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(43,66.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(48.5,66.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(43,78,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(48.5,78,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(43,66.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(48.5,66.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(43,78,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(48.5,78,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
 	// addFloatingBox2(48.5,82,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
 
 	//BLANK TILES
@@ -323,26 +336,7 @@ area.appendChild(top);
 	addFloatingBox2(51,91,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
 
 
-// var addLabelBox=function(j,h,text,bottom,color){
-// 	var s=document.createElement('div');
-// 	opn.set(s.style,{
-// 			position:'absolute',
-// 			left:'0%',
-// 			top:(j*h)+'%',
-// 			height:h+'%',
-// 			width:'10%',
-// 			backgroundColor:'rgb(255,255,255)',
-// 			//border : '2px dotted black' ,
-// 			fontSize:'20px',
-// 			fontWeight:700,
-// 			fontFamily:'Arial',
-// 			textAlign:'center',
-// 			lineHeight:Math.round(bottom.clientHeight/12)+'px',
-// 			color:color
-// 		});
-// 	s.innerHTML=text;
-// 	bottom.appendChild(s);
-// }
+
 }
 
 var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
@@ -371,7 +365,7 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
         s.style.borderRadius ='15px';
         s.style.fontSize =Math.round(4*bottom.clientHeight/6)+'%';
         s.style.fontWeight =700;
-        s.style.fontFamily ='"Didact Gothic"';
+        s.style.fontFamily ='Didact Gothic-Regular';
         s.style.textAlign ='center';
         s.style.lineHeight =Math.round(0.35*bottom.clientHeight/6)+'%';
         s.style.color ='black';
