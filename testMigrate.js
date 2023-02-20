@@ -27,10 +27,10 @@ area.appendChild(top);
 	var slotarea=document.createElement('div');
 	
         slotarea.style.position='absolute';
-        slotarea.style.left='-35%';
+        slotarea.style.left='-30%';
         slotarea.style.top='-80%';
         slotarea.style.height='100%';
-        slotarea.style.width='25%';
+        slotarea.style.width='20%';
 		slotarea.style.paddingRight='35%',
         slotarea.style.border='4px solid lightgrey';
         slotarea.style.borderRadius='2px';
@@ -49,7 +49,7 @@ area.appendChild(top);
 
 	beforeSlot.style.position = 'absolute';
 	beforeSlot.style.width = '20%';
-	beforeSlot.style.marginLeft = '-60%';
+	beforeSlot.style.marginLeft = '-55%';
 	beforeSlot.style.marginTop = '3%';
 	beforeSlot.style.border = '4px solid lightgrey';
 
@@ -358,14 +358,15 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
         s.style.position = 'absolute';
         s.style.left  = x+'%';
         s.style.top = y+'%';
-        s.style.height = '5%';
-        s.style.width = '5%';
+        s.style.height = '5.1%';
+        s.style.width = '5.3%';
         s.style.userSelect = 'none';
         s.style.border = borderType;
         s.style.borderRadius ='15px';
-        s.style.fontSize =Math.round(4*bottom.clientHeight/6)+'%';
+        // s.style.fontSize =Math.round(4*bottom.clientHeight/6)+'%';
+		s.style.fontSize = "4.4vw";
         s.style.fontWeight =700;
-        s.style.fontFamily ='Didact Gothic-Regular';
+        s.style.fontFamily ='Arial';
         s.style.textAlign ='center';
         s.style.lineHeight =Math.round(0.35*bottom.clientHeight/6)+'%';
         s.style.color ='black';
@@ -415,8 +416,10 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 			e.preventDefault();
 			e.stopPropagation();
 			//float_item . style . opacity = 0.5
-			memx=-e.targetTouches[0].clientX+fx;
-			memy=-e.targetTouches[0].clientY+fy;
+			// memx=-e.targetTouches[0].clientX+fx;
+			// memy=-e.targetTouches[0].clientY+fy;
+			memx=0;
+			memy=0;
 			
 			s.style.zIndex=float_item_indx;
 			s.style.boxShadow='10px 10px 8px rgba(20,20,20,0.5)';
