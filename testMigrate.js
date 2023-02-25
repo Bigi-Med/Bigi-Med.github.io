@@ -1,15 +1,16 @@
-
 function runThis() {
-var area=document.createElement('div');
-document.body.appendChild(area);
-var top=document.createElement('div');
+	
 
-
-top.style.position = 'absolute';
-top.style.left ='0px';
-top.style.right = '0px';
-top.style.top='0px';
-top.style.height = '30%';
+	var area=document.createElement('div');
+	document.body.appendChild(area);
+	var top=document.createElement('div');
+	
+	
+	top.style.position = 'absolute';
+	top.style.left ='0px';
+	top.style.right = '0px';
+	top.style.top='0px';
+	top.style.height = '30%';
 
 area.appendChild(top);
 
@@ -28,9 +29,9 @@ area.appendChild(top);
 	
         slotarea.style.position='absolute';
         slotarea.style.left='-30%';
-        slotarea.style.top='-80%';
-        slotarea.style.height='100%';
-        slotarea.style.width='20%';
+        slotarea.style.top='-60%';
+        slotarea.style.height='70%';
+        slotarea.style.width='12.5%';
 		slotarea.style.paddingRight='35%',
         slotarea.style.border='4px solid lightgrey';
         slotarea.style.borderRadius='2px';
@@ -41,16 +42,16 @@ area.appendChild(top);
 
 		afterSlot.style.position='absolute';
 		afterSlot.style.width='20%';
-		afterSlot.style.marginLeft='30%';
-		afterSlot.style.marginTop='3%';
+		afterSlot.style.marginLeft='20%';
+		afterSlot.style.marginTop='1.2%';
 		afterSlot.style.border='4px solid lightgrey';
 
 	var beforeSlot=document.createElement('div');
 
 	beforeSlot.style.position = 'absolute';
 	beforeSlot.style.width = '20%';
-	beforeSlot.style.marginLeft = '-55%';
-	beforeSlot.style.marginTop = '3%';
+	beforeSlot.style.marginLeft = '-53%';
+	beforeSlot.style.marginTop = '1.2%';
 	beforeSlot.style.border = '4px solid lightgrey';
 
 	
@@ -88,7 +89,7 @@ area.appendChild(top);
 	
 
         reset_b.style.position = 'absolute';
-        reset_b.style.right = '45%';
+        reset_b.style.right = '47%';
         reset_b.style.top = '0%';
         reset_b.style.height = '50%';
         reset_b.style.width = '8%';
@@ -102,20 +103,23 @@ area.appendChild(top);
 	area.appendChild(logo);
 	var logoImg = document.createElement("img");
 	logoImg.src = "./mag-meg.png"
-	logoImg.style.width = '400px';
-	logoImg.style.height = '280px';
+	logoImg.style.width = '22vw';
+	logoImg.style.height = '15vw';
 
 	var resetImg = document.createElement("img");
 	resetImg.src= "./undo.png";
-	resetImg.style.height = '50px';
-	resetImg.style.width = '50px';
+	resetImg.style.height = '3vw';
+	resetImg.style.width = '3vw';
 	reset_b.appendChild(resetImg)
 	logo.appendChild(logoImg);
-
+// const fontFile = new FontFace(
+//   "Didact Gothic",
+//   "url(https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap)"
+// );
 	var wordTorque = document.createElement("div");
 		wordTorque.style.position= 'absolute';
-		wordTorque.style.right= '9%';
-		wordTorque.style.top= '84%';
+		wordTorque.style.right= '15%';
+		wordTorque.style.top= '81%';
 		wordTorque.style.height= '50%';
 		wordTorque.style.width= '8%';
 		wordTorque.style.backgroundSize= 'contain';
@@ -124,6 +128,8 @@ area.appendChild(top);
 
 	var wordTorqueImg = document.createElement("img");
 	wordTorqueImg.src = "./thumb_wordtorque logo.png";
+	wordTorqueImg.style.height = '13vw';
+	wordTorqueImg.style.width = '25vw';
 	area.appendChild(wordTorque);
 	wordTorque.appendChild(wordTorqueImg);
 
@@ -317,23 +323,23 @@ area.appendChild(top);
 	addFloatingBox2(89.5,82.5,w,h,'ir',area,bottom,'rgb(158,206,220)',"v");
 	addFloatingBox2(95,82.5,w,h,'or',area,bottom,'rgb(158,206,220)',"v");
 	
-	addFloatingBox2(43,27.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(48.5,27.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(43,42.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(48.5,42.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(43,54.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(48.5,54.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(43,66.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(48.5,66.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(43,78,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(48.5,78,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(43,27.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(48.5,27.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(43,42.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(48.5,42.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(43,54.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(48.5,54.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(43,66.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(48.5,66.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(43,78,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(48.5,78,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
 	// addFloatingBox2(48.5,82,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
 
 	//BLANK TILES
 
-	addFloatingBox2(40,91,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(45.5,91,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(51,91,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
+	addFloatingBox2(40,90,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(46.5,90,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(50,90,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
 
 
 
@@ -343,38 +349,55 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 	var borderType='1px solid red';
 	if(type==="c")
 	{
-		borderType='1px solid blue';
+		borderType='3px solid blue';
+		x = x+1;
 	}
 	else if(type==="v")
 	{
-		borderType='1px solid red';
+		borderType='3px solid red';
+		x = x-1;
 	}
 	else if(type==="ps")
 	{
-		borderType='1px solid  green';
+		borderType='3px solid  green';
 	}
 	var s=document.createElement('div');
-	
-        s.style.position = 'absolute';
-        s.style.left  = x+'%';
-        s.style.top = y+'%';
-        s.style.height = '5.1%';
-        s.style.width = '5.3%';
-        s.style.userSelect = 'none';
-        s.style.border = borderType;
-        s.style.borderRadius ='15px';
-        // s.style.fontSize =Math.round(4*bottom.clientHeight/6)+'%';
-		s.style.fontSize = "4.4vw";
-        s.style.fontWeight =700;
-        s.style.fontFamily ='Arial';
-        s.style.textAlign ='center';
-        s.style.lineHeight =Math.round(0.35*bottom.clientHeight/6)+'%';
-        s.style.color ='black';
-        s.style.backgroundColor ='white';
-        s.style.boxSizing ='content-box';
-        s.style.boxShadow ='2px 2px 2px #888888';
-		s.style.paddingTop = '1%';
-		s.style.paddingBottom = '1%';
+	s.setAttribute("id","fontChange");
+// 	var styleElement = document.createElement('style');
+// 	document.head.appendChild(styleElement);
+// styleElement.textContent = `
+//   @font-face {
+//     font-family: 'Didact Gothic';
+//     src: url('DidactGothic-Regular.woff2') format('woff2'),
+//          url('DidactGothic-Regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//   }
+// `;
+// font.load.then(()=>{
+
+	s.style.position = 'absolute';
+	s.style.left  = x+'%';
+	s.style.top = y+'%';
+	s.style.height = '5.1%';
+	s.style.width = '5.3%';
+	s.style.userSelect = 'none';
+	s.style.border = borderType;
+	s.style.borderRadius ='15px';
+	// s.style.fontSize =Math.round(4*bottom.clientHeight/6)+'%';
+	s.style.fontSize = "4vw";
+	s.style.fontWeight =500;
+	s.style.fontFamily ='My font';
+	s.style.lineHeight =Math.round(0.5*bottom.clientHeight/6)+'%';
+	s.style.color ='black';
+	s.style.backgroundColor ='white';
+	s.style.boxSizing ='content-box';
+	s.style.boxShadow ='2px 2px 2px #888888';
+	s.style.paddingTop = '1%';
+	s.style.paddingBottom = '1%';
+		
+	// });
+		
 
 
 
