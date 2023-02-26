@@ -78,7 +78,7 @@ area.appendChild(top);
 	var logo = document.createElement('div');
 		logo.style.position= 'absolute';
 		logo.style.right= '9%';
-		logo.style.top= '-1.9vw';
+		logo.style.top= '0vw';
 		logo.style.height= '50%';
 		logo.style.width= '8%';
 		logo.style.backgroundSize= 'contain';
@@ -103,8 +103,8 @@ area.appendChild(top);
 	area.appendChild(logo);
 	var logoImg = document.createElement("img");
 	logoImg.src = "./mag-meg.png"
-	logoImg.style.width = '22vw';
-	logoImg.style.height = '15vw';
+	logoImg.style.width = '15vw';
+	logoImg.style.height = '10vw';
 
 	var resetImg = document.createElement("img");
 	resetImg.src= "./undo.png";
@@ -119,7 +119,7 @@ area.appendChild(top);
 	var wordTorque = document.createElement("div");
 		wordTorque.style.position= 'absolute';
 		wordTorque.style.right= '30%';
-		wordTorque.style.top= '77%';
+		wordTorque.style.top= '75%';
 		wordTorque.style.height= '50%';
 		wordTorque.style.width= '8%';
 		wordTorque.style.backgroundSize= 'contain';
@@ -169,8 +169,8 @@ area.appendChild(top);
 	var prefixFrame=document.createElement('div');
 	
 	prefixFrame.style.position='absolute';
-	prefixFrame.style.left='77.6%';
-	prefixFrame.style.top='25%';
+	prefixFrame.style.left='82.5%';
+	prefixFrame.style.top='22%';
 	prefixFrame.style.height='65%';
 	prefixFrame.style.width='12%';
 	prefixFrame.style.paddingRight='0%',
@@ -330,18 +330,18 @@ area.appendChild(top);
 	addFloatingBox2(57,73.5,w,h,'or',area,bottom,'rgb(158,206,220)',"v");
 	addFloatingBox2(63,73.5,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
 	
-	addFloatingBox(78,23.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,23.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,37.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,37.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,47.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,47.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,57.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,57.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,67.5,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,67.5,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,77.5,w,h,'y',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(84,77.5,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(83,23.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(89,23.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(83,37.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(89,37.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(83,47.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(89,47.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(83,57.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(89,57.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(83,67.5,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(89,67.5,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(83,77.5,w,h,'y',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(89,77.5,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
 
 	//BLANK TILES
 
@@ -358,21 +358,18 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 		borderType='3px solid ';
 		myColor = '#0096cc';
 		x = x+1;
-		y = y+3;
 	}
 	else if(type==="v")
 	{
 		borderType='3px solid ';
 		myColor='#cc3600';
 		x = x-1;
-		y = y+3;
 
 	}
 	else if(type==="ps")
 	{
 		borderType='3px solid';
 		myColor = '#6aa84f';
-		y = y+3;
 
 	}
 	var s=document.createElement('div');
