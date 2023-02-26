@@ -171,7 +171,7 @@ area.appendChild(top);
 	prefixFrame.style.position='absolute';
 	prefixFrame.style.left='77.6%';
 	prefixFrame.style.top='25%';
-	prefixFrame.style.height='63%';
+	prefixFrame.style.height='65%';
 	prefixFrame.style.width='12%';
 	prefixFrame.style.paddingRight='0%',
 	prefixFrame.style.border='4px solid';
@@ -332,16 +332,16 @@ area.appendChild(top);
 	
 	addFloatingBox(78,23.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
 	addFloatingBox(84,23.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,33.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,33.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,43.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,43.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,53.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,53.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,63.5,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(84,63.5,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(78,73.5,w,h,'y',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(84,73.5,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,37.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,37.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,47.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,47.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,57.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,57.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,67.5,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,67.5,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,77.5,w,h,'y',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(84,77.5,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
 
 	//BLANK TILES
 
@@ -401,7 +401,7 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 	s.style.borderRadius ='15px';
 	// s.style.fontSize =Math.round(4*bottom.clientHeight/6)+'%';
 	s.style.fontSize = "3vw";
-	s.style.fontWeight =500;
+	s.style.fontWeight =200;
 	s.style.fontFamily ='My font';
 	s.style.textAlign='center';
 	s.style.lineHeight =Math.round(0.5*bottom.clientHeight/6)+'%';
