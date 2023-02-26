@@ -78,7 +78,7 @@ area.appendChild(top);
 	var logo = document.createElement('div');
 		logo.style.position= 'absolute';
 		logo.style.right= '9%';
-		logo.style.top= '-4%';
+		logo.style.top= '-1.9vw';
 		logo.style.height= '50%';
 		logo.style.width= '8%';
 		logo.style.backgroundSize= 'contain';
@@ -118,8 +118,8 @@ area.appendChild(top);
 // );
 	var wordTorque = document.createElement("div");
 		wordTorque.style.position= 'absolute';
-		wordTorque.style.right= '15%';
-		wordTorque.style.top= '81%';
+		wordTorque.style.right= '30%';
+		wordTorque.style.top= '77%';
 		wordTorque.style.height= '50%';
 		wordTorque.style.width= '8%';
 		wordTorque.style.backgroundSize= 'contain';
@@ -128,8 +128,8 @@ area.appendChild(top);
 
 	var wordTorqueImg = document.createElement("img");
 	wordTorqueImg.src = "./thumb_wordtorque logo.png";
-	wordTorqueImg.style.height = '13vw';
-	wordTorqueImg.style.width = '25vw';
+	wordTorqueImg.style.height = '15vw';
+	wordTorqueImg.style.width = '28vw';
 	area.appendChild(wordTorque);
 	wordTorque.appendChild(wordTorqueImg);
 
@@ -169,12 +169,13 @@ area.appendChild(top);
 	var prefixFrame=document.createElement('div');
 	
 	prefixFrame.style.position='absolute';
-	prefixFrame.style.left='42%';
+	prefixFrame.style.left='77.6%';
 	prefixFrame.style.top='25%';
 	prefixFrame.style.height='63%';
 	prefixFrame.style.width='12%';
 	prefixFrame.style.paddingRight='0%',
-	prefixFrame.style.border='4px solid green';
+	prefixFrame.style.border='4px solid';
+	prefixFrame.style.borderColor='#6aa84f';
 	prefixFrame.style.borderRadius='2px';
 	
 	area.appendChild(prefixFrame);
@@ -231,115 +232,119 @@ area.appendChild(top);
 	var w=Math.round(w*0.9);
 	
 	addFloatingBox2(0,23.5,w,h,'b',area,bottom,'rgb(161,218,206)',"c");
-	addFloatingBox2(5.5,23.5,w,h,'c',area,bottom,'rgb(161,218,206)',"c");
-	addFloatingBox2(11,23.5,w,h,'d',area,bottom,'rgb(161,218,206)',"c");
-	addFloatingBox2(16.5,23.5,w,h,'f',area,bottom,'rgb(161,218,206)',"c");
-	addFloatingBox2(22,23.5,w,h,'g',area,bottom,'rgb(161,218,206)',"c");
-	addFloatingBox2(27.5,23.5,w,h,'h',area,bottom,'rgb(161,218,206)',"c");
+	addFloatingBox2(6,23.5,w,h,'c',area,bottom,'rgb(161,218,206)',"c");
+	addFloatingBox2(12,23.5,w,h,'d',area,bottom,'rgb(161,218,206)',"c");
+	addFloatingBox2(18,23.5,w,h,'f',area,bottom,'rgb(161,218,206)',"c");
+	addFloatingBox2(24,23.5,w,h,'g',area,bottom,'rgb(161,218,206)',"c");
+	addFloatingBox2(30,23.5,w,h,'j',area,bottom,'rgb(161,218,206)',"c");
 	
-	addFloatingBox2(0,33.2,w,h,'j',area,bottom,'rgb(252,227,171)',"c");
-	addFloatingBox2(5.5,33.2,w,h,'k',area,bottom,'rgb(252,227,171)',"c");
-	addFloatingBox2(11,33.2,w,h,'l',area,bottom,'rgb(252,227,171)',"c");
-	addFloatingBox2(16.5,33.2,w,h,'m',area,bottom,'rgb(252,227,171)',"c");
-	addFloatingBox2(22,33.2,w,h,'n',area,bottom,'rgb(252,227,171)',"c");
-	addFloatingBox2(27.5,33.2,w,h,'p',area,bottom,'rgb(252,227,171)',"c");
+	addFloatingBox2(0,33.5,w,h,'h',area,bottom,'rgb(252,227,171)',"c");
+	addFloatingBox2(6,33.5,w,h,'k',area,bottom,'rgb(252,227,171)',"c");
+	addFloatingBox2(12,33.5,w,h,'l',area,bottom,'rgb(252,227,171)',"c");
+	addFloatingBox2(18,33.5,w,h,'m',area,bottom,'rgb(252,227,171)',"c");
+	addFloatingBox2(24,33.5,w,h,'n',area,bottom,'rgb(252,227,171)',"c");
+	addFloatingBox2(30,33.5,w,h,'p',area,bottom,'rgb(252,227,171)',"c");
 	
-	addFloatingBox2(0,42.9,w,h,'r',area,bottom,'rgb(242,189,217)',"c");
-	addFloatingBox2(5.5,42.9,w,h,'s',area,bottom,'rgb(242,189,217)',"c");
-	addFloatingBox2(11,42.9,w,h,'t',area,bottom,'rgb(242,189,217)',"c");
-	addFloatingBox2(16.5,42.9,w,h,'v',area,bottom,'rgb(242,189,217)',"c");
-	addFloatingBox2(22,42.9,w,h,'w',area,bottom,'rgb(242,189,217)',"c");
-	addFloatingBox2(27.5,42.9,w,h,'x',area,bottom,'rgb(242,189,217)',"c");
+	addFloatingBox2(0,43.5,w,h,'r',area,bottom,'rgb(242,189,217)',"c");
+	addFloatingBox2(6,43.5,w,h,'s',area,bottom,'rgb(242,189,217)',"c");
+	addFloatingBox2(12,43.5,w,h,'t',area,bottom,'rgb(242,189,217)',"c");
+	addFloatingBox2(18,43.5,w,h,'v',area,bottom,'rgb(242,189,217)',"c");
+	addFloatingBox2(24,43.5,w,h,'w',area,bottom,'rgb(242,189,217)',"c");
+	addFloatingBox2(30,43.5,w,h,'x',area,bottom,'rgb(242,189,217)',"c");
 	
-	addFloatingBox2(0,52.6,w,h,'y',area,bottom,'rgb(242,189,217)',"c");
-	addFloatingBox2(5.5,52.6,w,h,'z',area,bottom,'rgb(242,189,217)',"c");
-	
-	
-	addFloatingBox2(0,62.3,w,h,'sh',area,bottom,'rgb(252,156,132)',"c");
-	addFloatingBox2(5.5,62.3,w,h,'ch',area,bottom,'rgb(252,156,132)',"c");
-	addFloatingBox2(11,62.3,w,h,'th',area,bottom,'rgb(252,156,132)',"c");
-	addFloatingBox2(16.5,62.3,w,h,'ph',area,bottom,'rgb(252,156,132)',"c");
-	addFloatingBox2(22,62.3,w,h,'wh',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(0,53.5,w,h,'y',area,bottom,'rgb(242,189,217)',"c");
+	addFloatingBox2(6,53.5,w,h,'z',area,bottom,'rgb(242,189,217)',"c");
 	
 	
-	addFloatingBox2(0,72,w,h,'ck',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(5.5,72,w,h,'dg',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(11,72,w,h,'gh',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(16.5,72,w,h,'kn',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(0,63.5,w,h,'ch',area,bottom,'rgb(252,156,132)',"c");
+	addFloatingBox2(6,63.5,w,h,'gh',area,bottom,'rgb(252,156,132)',"c");
+	addFloatingBox2(12,63.5,w,h,'ph',area,bottom,'rgb(252,156,132)',"c");
+	addFloatingBox2(18,63.5,w,h,'sh',area,bottom,'rgb(252,156,132)',"c");
+	addFloatingBox2(24,63.5,w,h,'th',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(30,63.5,w,h,'wh',area,bottom,'rgb(241,141,143)',"c");
 	
 	
-	
-	
-	
-	addFloatingBox2(0,81.7,w,h,'mb',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(5.5,81.7,w,h,'ng',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(11,81.7,w,h,'qu',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(16.5,81.7,w,h,'wr',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(22,81.7,w,h,'tch',area,bottom,'rgb(241,141,143)',"c");
-	
-	
-	
-	addFloatingBox2(0,91.4,w,h,'ff',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(5.5,91.4,w,h,'ll',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(11,91.4,w,h,'ss',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(16.5,91.4,w,h,'zz',area,bottom,'rgb(241,141,143)',"c");
-	
-	
-	addFloatingBox2(67.5,23.5,w,h,'a',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(73,23.5,w,h,'e',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(78.5,23.5,w,h,'i',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(84,23.5,w,h,'o',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(89.5,23.5,w,h,'u',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(95,23.5,w,h,'y',area,bottom,'rgb(158,206,220)',"v");
-	
-	addFloatingBox2(78,35.5,w,h,'ai',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(83.5,35.5,w,h,'au',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(89,35.5,w,h,'aw',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(94.5,35.5,w,h,'ay',area,bottom,'rgb(158,206,220)',"v");
-	
-	addFloatingBox2(72.5,47.5,w,h,'ea',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(78,47.5,w,h,'ee',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(83.5,47.5,w,h,'ei',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(89,47.5,w,h,'ew',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(94.5,47.5,w,h,'ey',area,bottom,'rgb(158,206,220)',"v");
-	
-	addFloatingBox2(89,59.5,w,h,'ie',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(94.5,59.5,w,h,'igh',area,bottom,'rgb(158,206,220)',"v");
-	
-	
-	addFloatingBox2(67.5,71,w,h,'oa',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(73,71,w,h,'oi',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(78.5,71,w,h,'oo',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(84,71,w,h,'ou',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(89.5,71,w,h,'ow',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(95,71,w,h,'oy',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(0,73.5,w,h,'ck',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(6,73.5,w,h,'dg',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(12,73.5,w,h,'kn',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(18,73.5,w,h,'mb',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(24,73.5,w,h,'ng',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(30,73.5,w,h,'qu',area,bottom,'rgb(241,141,143)',"c");
 	
 	
 	
 	
 	
-	addFloatingBox2(78.5,82.5,w,h,'ar',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(84,82.5,w,h,'er',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(89.5,82.5,w,h,'ir',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(95,82.5,w,h,'or',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(0,83.5,w,h,'tch',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(6,83.5,w,h,'ff',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(12,83.5,w,h,'ll',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(18,83.5,w,h,'ss',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(24,83.5,w,h,'zz',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox2(30,83.5,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
+
 	
-	addFloatingBox(43,27.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(48.5,27.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(43,42.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(48.5,42.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(43,54.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(48.5,54.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(43,66.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(48.5,66.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(43,78,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox(48.5,78,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
-	// addFloatingBox2(48.5,82,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
+	
+	
+	// addFloatingBox2(0,91.4,w,h,'ff',area,bottom,'rgb(241,141,143)',"c");
+	// addFloatingBox2(5.5,91.4,w,h,'ll',area,bottom,'rgb(241,141,143)',"c");
+	// addFloatingBox2(11,91.4,w,h,'ss',area,bottom,'rgb(241,141,143)',"c");
+	// addFloatingBox2(16.5,91.4,w,h,'zz',area,bottom,'rgb(241,141,143)',"c");
+	
+	
+	addFloatingBox2(39,23.5,w,h,'a',area,bottom,'rgb(158,206,220)',"v");//move by 6
+	addFloatingBox2(45,23.5,w,h,'e',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(51,23.5,w,h,'i',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(57,23.5,w,h,'o',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(63,23.5,w,h,'u',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(69,23.5,w,h,'y',area,bottom,'rgb(158,206,220)',"v");
+	
+	addFloatingBox2(39,33.5,w,h,'ai',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(45,33.5,w,h,'au',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(51,33.5,w,h,'aw',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(57,33.5,w,h,'ay',area,bottom,'rgb(158,206,220)',"v");
+	
+	addFloatingBox2(39,43.5,w,h,'ea',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(45,43.5,w,h,'ee',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(51,43.5,w,h,'ei',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(57,43.5,w,h,'ew',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(63,43.5,w,h,'ey',area,bottom,'rgb(158,206,220)',"v");
+	
+	addFloatingBox2(39,53.5,w,h,'ie',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(45,53.5,w,h,'igh',area,bottom,'rgb(158,206,220)',"v");
+	
+	
+	addFloatingBox2(39,63.5,w,h,'oa',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(45,63.5,w,h,'oi',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(51,63.5,w,h,'oo',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(57,63.5,w,h,'ou',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(63,63.5,w,h,'ow',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(69,63.5,w,h,'oy',area,bottom,'rgb(158,206,220)',"v");
+	
+	
+	
+	
+	
+	addFloatingBox2(39,73.5,w,h,'ar',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(45,73.5,w,h,'er',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(51,73.5,w,h,'ir',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(57,73.5,w,h,'or',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(63,73.5,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
+	
+	addFloatingBox(78,23.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,23.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,33.5,w,h,'ing',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,33.5,w,h,'ed',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,43.5,w,h,'s',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,43.5,w,h,'es',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,53.5,w,h,'er',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,53.5,w,h,'est',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,63.5,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(84,63.5,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox(78,73.5,w,h,'y',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox2(84,73.5,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
 
 	//BLANK TILES
 
-	addFloatingBox2(40,90,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(46.5,90,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(50,90,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
 
 
 
@@ -347,19 +352,28 @@ area.appendChild(top);
 
 var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 	var borderType='1px solid red';
+	var myColor = '#1fcfe6';
 	if(type==="c")
 	{
-		borderType='3px solid blue';
+		borderType='3px solid ';
+		myColor = '#0096cc';
 		x = x+1;
+		y = y+3;
 	}
 	else if(type==="v")
 	{
-		borderType='3px solid red';
+		borderType='3px solid ';
+		myColor='#cc3600';
 		x = x-1;
+		y = y+3;
+
 	}
 	else if(type==="ps")
 	{
-		borderType='3px solid  green';
+		borderType='3px solid';
+		myColor = '#6aa84f';
+		y = y+3;
+
 	}
 	var s=document.createElement('div');
 	s.setAttribute("id","fontChange");
@@ -379,22 +393,25 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 	s.style.position = 'absolute';
 	s.style.left  = x+'%';
 	s.style.top = y+'%';
-	s.style.height = '5.1%';
-	s.style.width = '5.3%';
+	s.style.height = '3.8%';
+	s.style.width = '5.2%';
 	s.style.userSelect = 'none';
 	s.style.border = borderType;
+	s.style.borderColor = myColor;
 	s.style.borderRadius ='15px';
 	// s.style.fontSize =Math.round(4*bottom.clientHeight/6)+'%';
-	s.style.fontSize = "4vw";
+	s.style.fontSize = "3vw";
 	s.style.fontWeight =500;
 	s.style.fontFamily ='My font';
+	s.style.textAlign='center';
 	s.style.lineHeight =Math.round(0.5*bottom.clientHeight/6)+'%';
 	s.style.color ='black';
 	s.style.backgroundColor ='white';
 	s.style.boxSizing ='content-box';
 	s.style.boxShadow ='2px 2px 2px #888888';
-	s.style.paddingTop = '1%';
-	s.style.paddingBottom = '1%';
+	s.style.paddingTop = '0.7%';
+	// s.style.paddingLeft= '1.5%';
+	s.style.paddingBottom = '1.2%';
 		
 	// });
 		
