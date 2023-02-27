@@ -473,8 +473,8 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 			//float_item . style . opacity = 0.5
 			// memx=-e.targetTouches[0].clientX+fx;
 			// memy=-e.targetTouches[0].clientY+fy;
-			memx=0;
-			memy=0;
+			memx=-79;
+			memy=-48;
 			
 			s.style.zIndex=float_item_indx;
 			s.style.boxShadow='10px 10px 8px rgba(20,20,20,0.5)';
