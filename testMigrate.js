@@ -346,7 +346,8 @@ area.appendChild(top);
 	addFloatingBox2(45,73.5,w,h,'er',area,bottom,'rgb(158,206,220)',"v");
 	addFloatingBox2(51,73.5,w,h,'ir',area,bottom,'rgb(158,206,220)',"v");
 	addFloatingBox2(57,73.5,w,h,'or',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(63,73.5,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(63,73.5,w,h,'ur',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox2(69,73.5,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
 	
 	addFloatingBox(83,23.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
 	addFloatingBox(89,23.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
