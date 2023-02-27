@@ -89,9 +89,9 @@ area.appendChild(top);
 	
 
         reset_b.style.position = 'absolute';
-        reset_b.style.left = '5%';
-        reset_b.style.bottom = '20%';
-        reset_b.style.height = '50%';
+        reset_b.style.left = '10%';
+        reset_b.style.bottom = '60%';
+        reset_b.style.height = '5%';
         reset_b.style.width = '8%';
         reset_b.style.backgroundSize = 'contain';
         reset_b.style.backgroundRepeat = 'no-repeat';
