@@ -503,14 +503,15 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 	var fx=Math.round(x*area.clientWidth/100);
 	var fy=Math.round(y*area.clientHeight/100);
 	s.addEventListener('mousedown',function(e){
-			// e.preventDefault();
+			e.preventDefault();
 			e.stopPropagation();
 			//float_item . style . opacity = 0.5
 			// fx=0;
 			// fx=0;
-			
-			memx=0;
-			memy=0;
+			memx=-79;
+			memy=-48;
+			// memx=-5;
+			// memy=-5;
 			console.log(memx);
 			console.log(memy);
 			console.log("clientY = -e.clientY *****" + -e.clientY + " true y : "+ y  + "****** page y is : " + e.pageY);
