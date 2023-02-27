@@ -89,8 +89,8 @@ area.appendChild(top);
 	
 
         reset_b.style.position = 'absolute';
-        reset_b.style.right = '47%';
-        reset_b.style.top = '0%';
+        reset_b.style.left = '5%';
+        reset_b.style.bottom = '20%';
         reset_b.style.height = '50%';
         reset_b.style.width = '8%';
         reset_b.style.backgroundSize = 'contain';
@@ -110,6 +110,7 @@ area.appendChild(top);
 	resetImg.src= "./undo.png";
 	resetImg.style.height = '3vw';
 	resetImg.style.width = '3vw';
+	resetImg.style.transform = 'rotate(-30deg)';
 	reset_b.appendChild(resetImg)
 	logo.appendChild(logoImg);
 // const fontFile = new FontFace(
@@ -118,8 +119,8 @@ area.appendChild(top);
 // );
 	var wordTorque = document.createElement("div");
 		wordTorque.style.position= 'absolute';
-		wordTorque.style.right= '30%';
-		wordTorque.style.top= '75%';
+		wordTorque.style.right= '13%';
+		wordTorque.style.top= '87%';
 		wordTorque.style.height= '50%';
 		wordTorque.style.width= '8%';
 		wordTorque.style.backgroundSize= 'contain';
@@ -127,11 +128,28 @@ area.appendChild(top);
 		wordTorque.style.backgroundPosition= 'center';
 
 	var wordTorqueImg = document.createElement("img");
-	wordTorqueImg.src = "./thumb_wordtorque logo.png";
-	wordTorqueImg.style.height = '15vw';
-	wordTorqueImg.style.width = '28vw';
+	wordTorqueImg.src = "./wordtorque.png";
+	wordTorqueImg.style.height = '5vw';
+	wordTorqueImg.style.width = '15vw';
 	area.appendChild(wordTorque);
 	wordTorque.appendChild(wordTorqueImg);
+
+	var buildingBase = document.createElement("div");
+	buildingBase.style.position = 'absolute';
+	buildingBase.style.left = '1%'
+	buildingBase.style.bottom = '50%';
+	buildingBase.style.height='50%';
+	buildingBase.style.width='8%';
+	buildingBase.style.backgroundSize = 'contain';
+	buildingBase.style.backgroundRepeat = 'no-repeat';
+	buildingBase.style.backgroundPosition = 'center';
+
+	var buildingBaseImg = document.createElement("img");
+	buildingBaseImg.src='Building Bases Board.png';
+	buildingBaseImg.style.height = '4vw';
+	buildingBaseImg.style.width = '20vw';
+	area.appendChild(buildingBase);
+	buildingBase.appendChild(buildingBaseImg);
 
 	reset_b.addEventListener('touchstart',function(){
 			for(var i=0;i<float_list.length;i++)float_list[i]();
