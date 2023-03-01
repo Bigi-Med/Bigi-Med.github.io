@@ -42,7 +42,7 @@ area.appendChild(top);
 
 		afterSlot.style.position='absolute';
 		afterSlot.style.width='20%';
-		afterSlot.style.marginLeft='20%';
+		afterSlot.style.marginLeft='18%';
 		afterSlot.style.marginTop='1.2%';
 		afterSlot.style.border='4px solid lightgrey';
 
@@ -50,7 +50,7 @@ area.appendChild(top);
 
 	beforeSlot.style.position = 'absolute';
 	beforeSlot.style.width = '20%';
-	beforeSlot.style.marginLeft = '-49%';
+	beforeSlot.style.marginLeft = '-48%';
 	beforeSlot.style.marginTop = '1.2%';
 	beforeSlot.style.border = '4px solid lightgrey';
 
