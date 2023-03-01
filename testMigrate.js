@@ -28,10 +28,10 @@ area.appendChild(top);
 	var slotarea=document.createElement('div');
 	
         slotarea.style.position='absolute';
-        slotarea.style.left='-30%';
-        slotarea.style.top='-60%';
-        slotarea.style.height='70%';
-        slotarea.style.width='6.2%';
+        slotarea.style.left='-25%';
+        slotarea.style.top='-55%';
+        slotarea.style.height='60%';
+        slotarea.style.width='5%';
 		slotarea.style.paddingRight='35%',
         slotarea.style.border='4px solid lightgrey';
         slotarea.style.borderRadius='2px';
@@ -42,7 +42,7 @@ area.appendChild(top);
 
 		afterSlot.style.position='absolute';
 		afterSlot.style.width='20%';
-		afterSlot.style.marginLeft='14%';
+		afterSlot.style.marginLeft='20%';
 		afterSlot.style.marginTop='1.2%';
 		afterSlot.style.border='4px solid lightgrey';
 
@@ -50,7 +50,7 @@ area.appendChild(top);
 
 	beforeSlot.style.position = 'absolute';
 	beforeSlot.style.width = '20%';
-	beforeSlot.style.marginLeft = '-53%';
+	beforeSlot.style.marginLeft = '-49%';
 	beforeSlot.style.marginTop = '1.2%';
 	beforeSlot.style.border = '4px solid lightgrey';
 
