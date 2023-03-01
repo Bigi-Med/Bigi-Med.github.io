@@ -421,6 +421,7 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 	s.style.fontFamily ='My font';
 	s.style.textAlign='center';
 	s.style.lineHeight =Math.round(0.5*bottom.clientHeight/6)+'%';
+	s.style.lineHeight ='2vw';
 	s.style.color ='black';
 	s.style.backgroundColor ='white';
 	s.style.boxSizing ='content-box';
