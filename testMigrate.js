@@ -18,7 +18,7 @@ area.appendChild(top);
 	var slotarea_c=document.createElement('div');
 	
         slotarea_c.style.position='absolute';
-        slotarea_c.style.left='50%';
+        slotarea_c.style.left='51%';
         slotarea_c.style.top='56.7%';
         slotarea_c.style.height='50%';
         slotarea_c.style.width='50%';
@@ -30,7 +30,7 @@ area.appendChild(top);
         slotarea.style.position='absolute';
         slotarea.style.left='-25%';
         slotarea.style.top='-55%';
-        slotarea.style.height='60%';
+        slotarea.style.height='70%';
         slotarea.style.width='5%';
 		slotarea.style.paddingRight='35%',
         slotarea.style.border='4px solid lightgrey';
