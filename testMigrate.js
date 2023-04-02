@@ -26,33 +26,73 @@ area.appendChild(top);
 	top.appendChild(slotarea_c);
 	
 	var slotarea=document.createElement('div');
-	
-        slotarea.style.position='absolute';
-        slotarea.style.left='-25%';
-        slotarea.style.top='-55%';
-        slotarea.style.height='70%';
-        slotarea.style.width='5%';
-		slotarea.style.paddingRight='35%',
-        slotarea.style.border='4px solid lightgrey';
-        slotarea.style.borderRadius='2px';
-		// slotarea.backgroundColor = 'red';
 
+		slotarea.setAttribute("id","box");
+	
+        // slotarea.style.position='absolute';
+        // slotarea.style.left='-25%';
+        // slotarea.style.top='-55%';
+        // slotarea.style.height='70%';
+        // slotarea.style.width='5%';
+		// slotarea.style.paddingRight='35%',
+        // slotarea.style.border='4px solid red';
+        // slotarea.style.borderRadius='2px';
+		// slotarea.style.resize='true';
+		// slotarea.backgroundColor = 'red';
+		
+			// const box = document.getElementById('box');
+		//   console.log(slotarea.offsetWidth);
+			
+		  
 
 	var afterSlot=document.createElement('div');
+	
 
-		afterSlot.style.position='absolute';
-		afterSlot.style.width='20%';
-		afterSlot.style.marginLeft='18%';
-		afterSlot.style.marginTop='1.2%';
-		afterSlot.style.border='4px solid lightgrey';
+	afterSlot.setAttribute("id","afterSlot");
+
+	function updateAfterSlotPosition() {
+		console.log("in update")
+	  const boxRect = slotarea.getBoundingClientRect();
+	  const boxRight = boxRect.left + boxRect.width;
+	  afterSlot.style.left = `${boxRight + 10}px`;
+	}
+
+	const onresize = (dom_elem, callback) => {
+		const resizeObserver = new ResizeObserver(() => callback() );
+		resizeObserver.observe(dom_elem);
+	  }
+
+	  onresize(slotarea, function () {
+		const boxRect = slotarea.getBoundingClientRect();
+	  const boxRight = /*boxRect.left +*/ boxRect.width;
+	  console.log("boxRect left" + boxRect.left);
+	  console.log("boxrect width" + boxRect.width)
+
+	  console.log("boxRight"+boxRight);
+	  afterSlot.style.left = `${20 - (255-boxRight)/7}%`;
+	//   afterSlot.style.left = '20%';
+	  console.log("test");
+	  });
+  
+	// updateAfterSlotPosition();
+  
+	slotarea.addEventListener('resize', updateAfterSlotPosition,false);
+
+		// afterSlot.style.position='absolute';
+		// afterSlot.style.width='20%';
+		// afterSlot.style.marginLeft='18%';
+		// afterSlot.style.marginTop='1.2%';
+		// afterSlot.style.border='4px solid red';
 
 	var beforeSlot=document.createElement('div');
 
-	beforeSlot.style.position = 'absolute';
-	beforeSlot.style.width = '20%';
-	beforeSlot.style.marginLeft = '-48%';
-	beforeSlot.style.marginTop = '1.2%';
-	beforeSlot.style.border = '4px solid lightgrey';
+		beforeSlot.setAttribute("id","beforeSlot");
+
+	// beforeSlot.style.position = 'absolute';
+	// beforeSlot.style.width = '20%';
+	// beforeSlot.style.marginLeft = '-48%';
+	// beforeSlot.style.marginTop = '1.2%';
+	// beforeSlot.style.border = '4px solid lightgrey';
 
 	
 
@@ -535,6 +575,17 @@ var addFloatingBox2=function(x,y,w,h,text,area,bottom,color,type){
 	addFloatingBox(x,y,w,h,text,area,bottom,color,type);
 	
 }
+
+// function updateAfterSlotPosition() {
+
+// 	var box=document.getElementById('box');
+
+// 	const boxRect = box.getBoundingClientRect();
+// 	const boxRight = boxRect.left + boxRect.width;
+// 	var afterSlot = document.getElementById('afterSlot');
+// 	console.log("in update function")
+// 	afterSlot.style.left = `${boxRight + 10}px`;
+//   }
 
 var float_list=[];
 var float_item_indx=1;

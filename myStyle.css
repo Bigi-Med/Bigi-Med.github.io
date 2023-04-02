@@ -5,4 +5,36 @@
 
   body {
     overflow: hidden; /* Hide scrollbars */
+    
   }
+
+#box{
+  border: 2px solid;
+  padding: 20px; 
+  width: 33%;
+  resize: horizontal;
+  writing-mode: horizontal-tb;
+  overflow: auto;
+  position:relative;
+  writing-mode: horizontal-tb;
+  left:-27%;
+  top:-40%;
+  height: 20%;
+}
+
+#afterSlot{
+  position:relative;
+  border: 2px solid;
+  top:-50%;
+  width: 10%;
+  left: 20%;
+  transform: translate(0, -50%);
+}
+
+#beforeSlot{
+  position:relative;
+  border: 2px solid;
+  top: -50%;
+  width: 10%;
+  right: 45%;
+}
