@@ -28,6 +28,10 @@ area.appendChild(top);
 	var slotarea=document.createElement('div');
 
 		slotarea.setAttribute("id","box");
+
+		const myboxRect = slotarea.getBoundingClientRect();
+	  const myboxRight = /*boxRect.left +*/ myboxRect.width;
+	  console.log(myboxRight);
 	
         // slotarea.style.position='absolute';
         // slotarea.style.left='-25%';
@@ -50,6 +54,8 @@ area.appendChild(top);
 
 	afterSlot.setAttribute("id","afterSlot");
 
+	const orignal = slotarea.offsetWidth
+	console.log(window.screen.width);
 	function updateAfterSlotPosition() {
 		console.log("in update")
 	  const boxRect = slotarea.getBoundingClientRect();
@@ -69,7 +75,9 @@ area.appendChild(top);
 	  console.log("boxrect width" + boxRect.width)
 
 	  console.log("boxRight"+boxRight);
-	  afterSlot.style.left = `${20 - (255-boxRight)/7}%`;
+	//   afterSlot.style.left = `${20 - (360.8-boxRight)/7}%`;
+	console.log(screen.width)
+	  afterSlot.style.left = `${20 - (screen.width*20.5/100 - boxRight)/7.5 }%`;
 	//   afterSlot.style.left = '20%';
 	  console.log("test");
 	  });
