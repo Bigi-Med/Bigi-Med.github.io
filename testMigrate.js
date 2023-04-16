@@ -236,7 +236,7 @@ area.appendChild(top);
 	
 	prefixFrame.style.position='absolute';
 	prefixFrame.style.left='82.5%';
-	prefixFrame.style.top='22%';
+	prefixFrame.style.top='20.5%';
 	prefixFrame.style.height='65%';
 	prefixFrame.style.width='12%';
 	prefixFrame.style.paddingRight='0%',
@@ -346,7 +346,8 @@ area.appendChild(top);
 	addFloatingBox2(12,83.5,w,h,'ll',area,bottom,'rgb(241,141,143)',"c");
 	addFloatingBox2(18,83.5,w,h,'ss',area,bottom,'rgb(241,141,143)',"c");
 	addFloatingBox2(24,83.5,w,h,'zz',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox2(30,83.5,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
+	addFloatingBox2(30,83.5,w,h,'ugh',area,bottom,'rgb(241,141,143)',"c");
+	addFloatingBox5(0,93.5,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
 
 	
 	
@@ -395,7 +396,7 @@ area.appendChild(top);
 	addFloatingBox2(51,73.5,w,h,'ir',area,bottom,'rgb(158,206,220)',"v");
 	addFloatingBox2(57,73.5,w,h,'or',area,bottom,'rgb(158,206,220)',"v");
 	addFloatingBox2(63,73.5,w,h,'ur',area,bottom,'rgb(158,206,220)',"v");
-	addFloatingBox2(69,73.5,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
+	addFloatingBox5(69,73.5,w,h,' ',area,bottom,'rgb(158,206,220)',"v");
 	
 	addFloatingBox(83,23.5,w,h,'re',area,bottom,'rgb(158,206,220)',"ps");
 	addFloatingBox(89,23.5,w,h,'un',area,bottom,'rgb(158,206,220)',"ps");
@@ -408,7 +409,7 @@ area.appendChild(top);
 	addFloatingBox(83,67.5,w,h,'ly',area,bottom,'rgb(158,206,220)',"ps");
 	addFloatingBox(89,67.5,w,h,'ful',area,bottom,'rgb(158,206,220)',"ps");
 	addFloatingBox(83,77.5,w,h,'y',area,bottom,'rgb(158,206,220)',"ps");
-	addFloatingBox2(89,77.5,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
+	addFloatingBox5(89,77.5,w,h,' ',area,bottom,'rgb(158,206,220)',"ps");
 
 	//BLANK TILES
 
@@ -456,7 +457,7 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 
 	s.style.position = 'absolute';
 	s.style.left  = x+'%';
-	s.style.top = y+'%';
+	s.style.top = y-2+'%';
 	s.style.height = '3.8%';
 	s.style.width = '5.2%';
 	s.style.userSelect = 'none';
@@ -552,22 +553,25 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 	var memx,memy;
 	var fx=Math.round(x*area.clientWidth/100);
 	var fy=Math.round(y*area.clientHeight/100);
+	console.log("client height" + area.clientWidth);
 	s.addEventListener('mousedown',function(e){
 			e.preventDefault();
 			e.stopPropagation();
 			//float_item . style . opacity = 0.5
 			// fx=0;
 			// fx=0;
-			memx=-79;
-			memy=-48;
+			// memx=-79;
+			// memy=-48;
+			memx=-e.clientX+fx;
+			memy=-y-10;
 			// memx=-5;
 			// memy=-5;
-			console.log(memx);
-			console.log(memy);
+			console.log("memx " + memx);
+			console.log("memy " + memy);
+			console.log("fx" + fx);
+			console.log("fy" + fy);
 			console.log("clientY = -e.clientY *****" + -e.clientY + " true y : "+ y  + "****** page y is : " + e.pageY);
 			console.log("clientX = -e.clientX *****" + -e.clientX + " true x : "+ x + "****** page x is : " + e.pageX);
-			console.log("memx" + memx);
-			console.log("memy" + memy);
 			s.style.zIndex=float_item_indx;
 			s.style.boxShadow='10px 10px 8px rgba(20,20,20,0.5)';
 			float_item_indx+=1;
@@ -580,6 +584,12 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 
 var addFloatingBox2=function(x,y,w,h,text,area,bottom,color,type){
 	for(var i=0;i<2;i++)
+	addFloatingBox(x,y,w,h,text,area,bottom,color,type);
+	
+}
+
+var addFloatingBox5=function(x,y,w,h,text,area,bottom,color,type){
+	for(var i=0;i<5;i++)
 	addFloatingBox(x,y,w,h,text,area,bottom,color,type);
 	
 }

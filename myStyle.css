@@ -3,13 +3,13 @@
     src: url('DidactGothic-Regular.ttf') format('truetype');
   }
 
-  body {
-    overflow: hidden; /* Hide scrollbars */
+   body {
+    overflow-x: hidden;
     
-  }
+  } 
 
 #box{
-  border: 2px solid;
+  border: 4px solid;
   padding: 20px; 
   width: 33%;
   resize: horizontal;
@@ -18,23 +18,26 @@
   position:relative;
   writing-mode: horizontal-tb;
   left:-27%;
-  top:-40%;
-  height: 20%;
+  top:-60%;
+  color: lightgray;
+  height: 25%;
 }
 
 #afterSlot{
   position:relative;
   border: 2px solid;
-  top:-50%;
+  top: -64%;
   width: 10%;
   left: 15%;
   transform: translate(0, -50%);
+  color: lightgray;
 }
 
 #beforeSlot{
   position:relative;
   border: 2px solid;
-  top: -50%;
+  top: -64%;
   width: 10%;
-  right: 45%;
+  color: lightgray;
+  right: 43%;
 }
