@@ -2,6 +2,7 @@ function runThis() {
 	
 
 	var area=document.createElement('div');
+	area.style.display='block';
 	document.body.appendChild(area);
 	var top=document.createElement('div');
 	
@@ -347,7 +348,7 @@ area.appendChild(top);
 	addFloatingBox2(18,83.5,w,h,'ss',area,bottom,'rgb(241,141,143)',"c");
 	addFloatingBox2(24,83.5,w,h,'zz',area,bottom,'rgb(241,141,143)',"c");
 	addFloatingBox2(30,83.5,w,h,'ugh',area,bottom,'rgb(241,141,143)',"c");
-	addFloatingBox5(0,93.5,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
+	addFloatingBox5(37,83.5,w,h,' ',area,bottom,'rgb(158,206,220)',"c");
 
 	
 	
@@ -457,7 +458,7 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 
 	s.style.position = 'absolute';
 	s.style.left  = x+'%';
-	s.style.top = y-2+'%';
+	s.style.top = y+'%';
 	s.style.height = '3.8%';
 	s.style.width = '5.2%';
 	s.style.userSelect = 'none';
@@ -553,19 +554,14 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 	var memx,memy;
 	var fx=Math.round(x*area.clientWidth/100);
 	var fy=Math.round(y*area.clientHeight/100);
-	console.log("client height" + area.clientWidth);
+	console.log("client height" + s.getBoundingClientRect().height);
 	s.addEventListener('mousedown',function(e){
 			e.preventDefault();
 			e.stopPropagation();
 			//float_item . style . opacity = 0.5
-			// fx=0;
-			// fx=0;
-			// memx=-79;
-			// memy=-48;
-			memx=-e.clientX+fx;
-			memy=-y-10;
-			// memx=-5;
-			// memy=-5;
+			memx=-70;
+			memy=-48;
+			
 			console.log("memx " + memx);
 			console.log("memy " + memy);
 			console.log("fx" + fx);
