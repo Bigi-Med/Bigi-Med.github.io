@@ -237,7 +237,7 @@ area.appendChild(top);
 	
 	prefixFrame.style.position='absolute';
 	prefixFrame.style.left='82.5%';
-	prefixFrame.style.top='20.5%';
+	prefixFrame.style.top='22%';
 	prefixFrame.style.height='65%';
 	prefixFrame.style.width='12%';
 	prefixFrame.style.paddingRight='0%',
