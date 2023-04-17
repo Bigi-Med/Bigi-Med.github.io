@@ -78,7 +78,7 @@ area.appendChild(top);
 	  console.log("boxRight"+boxRight);
 	//   afterSlot.style.left = `${20 - (360.8-boxRight)/7}%`;
 	console.log(screen.width)
-	  afterSlot.style.left = `${20 - (screen.width*20.5/100 - boxRight)/10 }%`;
+	  afterSlot.style.left = `${20 - (screen.width*20.5/100 - boxRight)/7.8 }%`;
 	//   afterSlot.style.left = '20%';
 	  console.log("test");
 	  });
