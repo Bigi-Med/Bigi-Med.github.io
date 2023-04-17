@@ -20,7 +20,7 @@
   left:-27%;
   top:-50%;
   color: lightgray;
-  height: 25%;
+  height: 28%;
 }
 
 #afterSlot{
@@ -31,6 +31,7 @@
   left: 15%;
   transform: translate(0, -50%);
   color: lightgray;
+  z-index: 20;
 }
 
 #beforeSlot{
