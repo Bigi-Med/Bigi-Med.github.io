@@ -12,6 +12,7 @@ function runThis() {
 	top.style.right = '0px';
 	top.style.top='0px';
 	top.style.height = '30%';
+	// top.style.zIndex = '-10';
 
 area.appendChild(top);
 
@@ -78,7 +79,7 @@ area.appendChild(top);
 	  console.log("boxRight"+boxRight);
 	//   afterSlot.style.left = `${20 - (360.8-boxRight)/7}%`;
 	console.log(screen.width)
-	  afterSlot.style.left = `${20 - (screen.width*20.5/100 - boxRight)/7.8 }%`;
+	  afterSlot.style.left = `${20 - (screen.width*20.5/100 - boxRight)/9 }%`;
 	//   afterSlot.style.left = '20%';
 	  console.log("test");
 	  });
@@ -133,6 +134,7 @@ area.appendChild(top);
 		logo.style.backgroundSize= 'contain';
 		logo.style.backgroundRepeat= 'no-repeat';
 		logo.style.backgroundPosition= 'center';
+		logo.style.zIndex='-10';
 	
 	var reset_b=document.createElement('div');
 	
@@ -487,7 +489,7 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 
 	s.innerHTML=text;
 	
-	
+	// area.style.zIndex = "40";
 	
 	area.appendChild(s);
 	
