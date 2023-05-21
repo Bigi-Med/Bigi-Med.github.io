@@ -8,28 +8,28 @@
     
   }  
 
-#box{
-  border: 4px solid;
-  padding: 20px; 
-  width: 33%;
-  resize: horizontal;
-  writing-mode: horizontal-tb;
-  overflow: auto;
-  position:relative;
-  writing-mode: horizontal-tb;
-  left:-27%;
-  top:-50%;
-  color: lightgray;
-  height: 28%;
-  /* z-index:20; */
-}
+  #box{
+    border: 4px solid;
+    padding: 20px; 
+    width: 33%;
+    resize: horizontal;
+    writing-mode: horizontal-tb;
+    overflow: auto;
+    position:relative;
+    writing-mode: horizontal-tb;
+    left:-23%;
+    top:-52%;
+    color: lightgray;
+    height: 32%;
+    /* z-index:20; */
+  }
 
 #afterSlot{
   position:relative;
   border: 2px solid;
-  top: -54%;
+  top: -56%;
   width: 10%;
-  left: 15%;
+  left: 21%;
   transform: translate(0, -50%);
   color: lightgray;
 }
@@ -37,8 +37,8 @@
 #beforeSlot{
   position:relative;
   border: 2px solid;
-  top: -54%;
+  top: -56%;
   width: 10%;
   color: lightgray;
-  right: 43%;
+  right: 38%;
 }

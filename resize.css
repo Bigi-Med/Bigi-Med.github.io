@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    margin: 50px;
+  }
+  
+  .prefix-line,
+  .suffix-line {
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 50%;
+    background-color: #000;
+  }
+  
+  .prefix-line {
+    transform: translateY(-50%);
+  }
+  
+  .suffix-line {
+    transform: translateY(-50%);
+  }
+  
+  .resizable-box {
+    position: relative;
+    display: inline-block;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    padding: 10px;
+    resize: horizontal;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  #input-box {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  

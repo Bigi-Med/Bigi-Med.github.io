@@ -20,20 +20,19 @@ area.appendChild(top);
 	var slotarea_c=document.createElement('div');
 	
         slotarea_c.style.position='absolute';
-        slotarea_c.style.left='51%';
+        slotarea_c.style.right='1%';
         slotarea_c.style.top='56.7%';
         slotarea_c.style.height='50%';
         slotarea_c.style.width='50%';
 
 	top.appendChild(slotarea_c);
 	
-	var slotarea=document.createElement('div');
+	var slotareaRight=document.createElement('div');
 
-		slotarea.setAttribute("id","box");
+		slotareaRight.setAttribute("id","box");
+	
 
-		const myboxRect = slotarea.getBoundingClientRect();
-	  const myboxRight = /*boxRect.left +*/ myboxRect.width;
-	  console.log(myboxRight);
+	
 	
         // slotarea.style.position='absolute';
         // slotarea.style.left='-25%';
@@ -56,37 +55,23 @@ area.appendChild(top);
 
 	afterSlot.setAttribute("id","afterSlot");
 
-	const orignal = slotarea.offsetWidth
+	const orignal = slotareaRight.offsetWidth
 	console.log(window.screen.width);
-	function updateAfterSlotPosition() {
-		console.log("in update")
-	  const boxRect = slotarea.getBoundingClientRect();
-	  const boxRight = boxRect.left + boxRect.width;
-	  afterSlot.style.left = `${boxRight + 10}px`;
-	}
+	// function updateAfterSlotPosition() {
+	// 	console.log("in update")
+	//   const boxRect = slotarea.getBoundingClientRect();
+	//   const boxRight = boxRect.left + boxRect.width;
+	//   afterSlot.style.left = `${boxRight + 10}px`;
+	// }
 
-	const onresize = (dom_elem, callback) => {
-		const resizeObserver = new ResizeObserver(() => callback() );
-		resizeObserver.observe(dom_elem);
-	  }
+	
 
-	  onresize(slotarea, function () {
-		const boxRect = slotarea.getBoundingClientRect();
-	  const boxRight = /*boxRect.left +*/ boxRect.width;
-	  console.log("boxRect left" + boxRect.left);
-	  console.log("boxrect width" + boxRect.width)
+	
 
-	  console.log("boxRight"+boxRight);
-	//   afterSlot.style.left = `${20 - (360.8-boxRight)/7}%`;
-	console.log(screen.width)
-	  afterSlot.style.left = `${20 - (screen.width*20.5/100 - boxRight)/9 }%`;
-	//   afterSlot.style.left = '20%';
-	  console.log("test");
-	  });
   
 	// updateAfterSlotPosition();
   
-	slotarea.addEventListener('resize', updateAfterSlotPosition,false);
+	// slotarea.addEventListener('resize', updateAfterSlotPosition,false);
 
 		// afterSlot.style.position='absolute';
 		// afterSlot.style.width='20%';
@@ -104,13 +89,58 @@ area.appendChild(top);
 	// beforeSlot.style.marginTop = '1.2%';
 	// beforeSlot.style.border = '4px solid lightgrey';
 
+	function resizeLeft(e)
+	{
+	  window.addEventListener('mousemove',mousemove);
+	  window.addEventListener('mouseup',mouseup);
+
+	  let prevX = e.x;
+	  const leftPanel = slotareaRight.getBoundingClientRect();
+
+	  function mousemove(e)
+	  {
+		  let newX = prevX - e.x;
+		  slotareaRight.style.width = leftPanel.width - e.x + prevX+  "px";
+	  }
+
+	  function mouseup() {
+		  window.removeEventListener('mousemove', mousemove);
+		  window.removeEventListener('mouseup', mouseup);
+		  
+		}
+		
+	}
+
+
+
+	// slotareaRight.addEventListener('mousedown', resizeLeft);
 	
 
 
 	// slotarea_c.appendChild(beforeSlot);
-	slotarea_c.appendChild(slotarea);
+	slotarea_c.appendChild(slotareaRight);
 	slotarea_c.appendChild(beforeSlot);
 	slotarea_c.appendChild(afterSlot);
+	const myboxRect = slotareaRight.getBoundingClientRect();
+	const slotBoxOriginal = /*boxRect.left +*/ myboxRect.width;
+	var oldWidth = slotBoxOriginal;
+	console.log(slotBoxOriginal);
+	const onresize = (dom_elem, callback) => {
+		const resizeObserver = new ResizeObserver(() => callback() );
+		resizeObserver.observe(dom_elem);
+	  }
+
+	  onresize(slotareaRight , function () {
+		const boxRect = slotareaRight.getBoundingClientRect();
+		const suffixLine = afterSlot.getBoundingClientRect();
+		const suffixLineLeft = suffixLine.left - slotarea_c.getBoundingClientRect().left;
+	  const boxRight = boxRect.width;
+	  console.log("new width" + boxRight);
+	  console.log("old width" + oldWidth);
+		 afterSlot.style.left = suffixLineLeft + (boxRight-oldWidth) + 'px' ;
+		 oldWidth = boxRight; // update oldWidth
+	  });
+
     // slotarea_c.appendChild(afterSlot);
 	var w=Math.round(100/5);
 	for(var i=0;i<5;i++){
@@ -122,7 +152,7 @@ area.appendChild(top);
             s.style.height = '100%';
             s.style.width = w+'%';
 
-		slotarea.appendChild(s);
+		slotareaRight.appendChild(s);
 	}
 
 	var logo = document.createElement('div');
@@ -246,6 +276,7 @@ area.appendChild(top);
 	prefixFrame.style.border='4px solid';
 	prefixFrame.style.borderColor='#6aa84f';
 	prefixFrame.style.borderRadius='2px';
+	prefixFrame.style.zIndex='-1';
 	
 	area.appendChild(prefixFrame);
 	
