@@ -207,6 +207,7 @@ area.appendChild(top);
 		wordTorque.style.backgroundSize= 'contain';
 		wordTorque.style.backgroundRepeat= 'no-repeat';
 		wordTorque.style.backgroundPosition= 'center';
+		wordTorque.style.zIndex='-20';
 
 	var wordTorqueImg = document.createElement("img");
 	wordTorqueImg.src = "./wordtorque.png";
