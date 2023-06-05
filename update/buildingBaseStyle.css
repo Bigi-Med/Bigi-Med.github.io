@@ -32,7 +32,6 @@
   left: 21%;
   transform: translate(0, -50%);
   color: lightgray;
-  z-index: 6;
 }
 
 #beforeSlot{

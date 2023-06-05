@@ -4,17 +4,17 @@ function runThis() {
 	var area=document.createElement('div');
 	area.style.display='block';
 	document.body.appendChild(area);
-	var topElement=document.createElement('div');
+	var top=document.createElement('div');
 	
 	
-	topElement.style.position = 'absolute';
-	topElement.style.left ='0px';
-	topElement.style.right = '0px';
-	topElement.style.top='0px';
-	topElement.style.height = '30%';
+	top.style.position = 'absolute';
+	top.style.left ='0px';
+	top.style.right = '0px';
+	top.style.top='0px';
+	top.style.height = '30%';
 	// top.style.zIndex = '-10';
 
-area.appendChild(topElement);
+area.appendChild(top);
 
 	
 	var slotarea_c=document.createElement('div');
@@ -25,7 +25,7 @@ area.appendChild(topElement);
         slotarea_c.style.height='50%';
         slotarea_c.style.width='50%';
 
-	topElement.appendChild(slotarea_c);
+	top.appendChild(slotarea_c);
 	
 	var slotareaRight=document.createElement('div');
 
@@ -180,7 +180,7 @@ area.appendChild(topElement);
 
 
 	
-	topElement.appendChild(reset_b);
+	top.appendChild(reset_b);
 	area.appendChild(logo);
 	var logoImg = document.createElement("img");
 	logoImg.src = "./mag-meg.png"
@@ -198,26 +198,23 @@ area.appendChild(topElement);
 //   "Didact Gothic",
 //   "url(https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap)"
 // );
-	
-		var link = document.createElement("a");
-		link.href = "https://wordtorque.com/";
-		link.target = "_blank";
+	var wordTorque = document.createElement("div");
+		wordTorque.style.position= 'absolute';
+		wordTorque.style.right= '13%';
+		wordTorque.style.top= '87%';
+		wordTorque.style.height= '50%';
+		wordTorque.style.width= '8%';
+		wordTorque.style.backgroundSize= 'contain';
+		wordTorque.style.backgroundRepeat= 'no-repeat';
+		wordTorque.style.backgroundPosition= 'center';
+		wordTorque.style.zIndex='-20';
+
 	var wordTorqueImg = document.createElement("img");
 	wordTorqueImg.src = "./wordtorque.png";
-	wordTorqueImg.style.position= 'absolute';
-	wordTorqueImg.style.right= '6%';
-	wordTorqueImg.style.top= '87%';
-	wordTorqueImg.style.height= '10.18%';
-	wordTorqueImg.style.width= '15%';
-	 wordTorqueImg.style.zIndex='4';
-
-	link.appendChild(wordTorqueImg);
-	// link.addEventListener("click", function() {
-	// 	window.open(link.href, '_blank');
-	// });
-	document.body.appendChild(link);
-
-	
+	wordTorqueImg.style.height = '5vw';
+	wordTorqueImg.style.width = '15vw';
+	area.appendChild(wordTorque);
+	wordTorque.appendChild(wordTorqueImg);
 
 	var buildingBase = document.createElement("div");
 	buildingBase.style.position = 'absolute';
@@ -280,7 +277,7 @@ area.appendChild(topElement);
 	prefixFrame.style.border='4px solid';
 	prefixFrame.style.borderColor='#6aa84f';
 	prefixFrame.style.borderRadius='2px';
-	prefixFrame.style.zIndex='5';
+	prefixFrame.style.zIndex='-1';
 	
 	area.appendChild(prefixFrame);
 	
