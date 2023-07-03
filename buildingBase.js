@@ -32,9 +32,7 @@ area.appendChild(topElement);
 	var slotareaRight=document.createElement('div');
 
 		slotareaRight.setAttribute("id","box");
-		$(slotareaRight).resizable({
-			touchAction: 'none' // Enable touch interactions
-		  });
+		$(slotareaRight).resizable();
 
 	
 
