@@ -1,5 +1,7 @@
 function runThis() {
 	
+	
+		
 
 	var area=document.createElement('div');
 	area.style.display='block';
@@ -30,6 +32,8 @@ area.appendChild(topElement);
 	var slotareaRight=document.createElement('div');
 
 		slotareaRight.setAttribute("id","box");
+$(slotareaRight).resizable();
+
 	
 
 	
@@ -613,6 +617,7 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color,type){
 			document.addEventListener('mouseup',up,true);
 			console.log('clicked');
 		})
+	
 }
 
 var addFloatingBox2=function(x,y,w,h,text,area,bottom,color,type){
