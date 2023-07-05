@@ -247,7 +247,19 @@ area.appendChild(topElement);
 		originalWidth = $(slotareaRight).width();
 	})
 
+	plusSign.addEventListener("touchstart",function(){
+		var originalWidth = $(slotareaRight).width();
+		$(slotareaRight).width(originalWidth+originalWidth*20/100);
+		originalWidth = $(slotareaRight).width();
+	})
+
 	minusSign.addEventListener("mousedown",function(){
+		var originalWidth = $(slotareaRight).width();
+		$(slotareaRight).width(originalWidth-originalWidth*20/100);
+		originalWidth = $(slotareaRight).width();
+	})
+
+	minusSign.addEventListener("touchstart",function(){
 		var originalWidth = $(slotareaRight).width();
 		$(slotareaRight).width(originalWidth-originalWidth*20/100);
 		originalWidth = $(slotareaRight).width();
