@@ -33,7 +33,8 @@ area.appendChild(topElement);
 
 		slotareaRight.setAttribute("id","box");
 		$(slotareaRight).resizable();
-
+			
+		  
 	
 
 	
