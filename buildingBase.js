@@ -187,6 +187,29 @@ area.appendChild(topElement);
         reset_b.style.backgroundRepeat = 'no-repeat';
         reset_b.style.backgroundPosition = 'center';
 
+	var plusSign = document.createElement('div');
+
+		plusSign.style.position = 'absolute';
+		plusSign.style.left = '5%';
+		plusSign.style.bottom = '60%';
+		plusSign.style.height = '5%';
+		plusSign.style.width = '8%';
+		plusSign.style.backgroundSize = 'contain';
+		plusSign.style.backgroundRepeat = 'no-repeat';
+		plusSign.style.backgroundPosition = 'center';
+
+	var minusSign = document.createElement('div');
+
+		minusSign.style.position = 'absolute';
+		minusSign.style.left = '15%';
+		minusSign.style.bottom = '60%';
+		minusSign.style.height = '5%';
+		minusSign.style.width = '8%';
+		minusSign.style.backgroundSize = 'contain';
+		minusSign.style.backgroundRepeat = 'no-repeat';
+		minusSign.style.backgroundPosition = 'center';
+
+
 
 	var myButton = document.createElement('button');
 	myButton.innerHTML='Reset';
@@ -204,6 +227,8 @@ area.appendChild(topElement);
 
 	})
 	topElement.appendChild(reset_b);
+	topElement.appendChild(plusSign);
+	topElement.appendChild(minusSign);
 	area.appendChild(logo);
 	var logoImg = document.createElement("img");
 	logoImg.src = "./mag-meg.png"
@@ -215,6 +240,19 @@ area.appendChild(topElement);
 	resetImg.style.height = '3vw';
 	resetImg.style.width = '3vw';
 	resetImg.style.transform = 'rotate(-30deg)';
+
+	var plusImg = document.createElement("img");
+	plusImg.src= "./plus.png";
+	plusImg.style.height = '3vw';
+	plusImg.style.width = '3vw';
+	
+	var minusImg = document.createElement("img");
+	minusImg.src= "./minus.png";
+	minusImg.style.height = '3vw';
+	minusImg.style.width = '3vw';
+
+	plusSign.appendChild(plusImg)
+	minusSign.appendChild(minusImg)
 	reset_b.appendChild(resetImg)
 	logo.appendChild(logoImg);
 // const fontFile = new FontFace(
