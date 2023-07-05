@@ -32,7 +32,9 @@ area.appendChild(topElement);
 	var slotareaRight=document.createElement('div');
 
 		slotareaRight.setAttribute("id","box");
-		$(slotareaRight).resizable();
+		// $(slotareaRight).resizable();
+		
+
 			
 		  
 	
@@ -146,6 +148,8 @@ area.appendChild(topElement);
 		 oldWidth = boxRight; // update oldWidth
 	  });
 
+	  console.log("my width is " +$(slotareaRight).width());
+
     // slotarea_c.appendChild(afterSlot);
 	var w=Math.round(100/5);
 	for(var i=0;i<5;i++){
@@ -184,7 +188,21 @@ area.appendChild(topElement);
         reset_b.style.backgroundPosition = 'center';
 
 
-	
+	var myButton = document.createElement('button');
+	myButton.innerHTML='Reset';
+	myButton.style.marginLeft='50%';
+	topElement.appendChild(myButton);
+	myButton.addEventListener('click', function(){
+		console.log("clicked button");
+    $(slotareaRight).width('200');
+
+	})
+
+	myButton.addEventListener('touchstart', function(){
+		console.log("clicked button");
+    $(slotareaRight).width('200');
+
+	})
 	topElement.appendChild(reset_b);
 	area.appendChild(logo);
 	var logoImg = document.createElement("img");
@@ -245,6 +263,7 @@ area.appendChild(topElement);
 			for(var i=0;i<float_list.length;i++)float_list[i]();
 		})
 	reset_b.addEventListener('mousedown',function(){
+		console.log("clicked");
 			for(var i=0;i<float_list.length;i++)float_list[i]();
 		})
 	
