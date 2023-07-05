@@ -190,42 +190,32 @@ area.appendChild(topElement);
 	var plusSign = document.createElement('div');
 
 		plusSign.style.position = 'absolute';
-		plusSign.style.left = '5%';
+		plusSign.style.right = '20%';
 		plusSign.style.bottom = '60%';
 		plusSign.style.height = '5%';
-		plusSign.style.width = '8%';
+		plusSign.style.width = '0.1%';
 		plusSign.style.backgroundSize = 'contain';
 		plusSign.style.backgroundRepeat = 'no-repeat';
 		plusSign.style.backgroundPosition = 'center';
+		plusSign.style.display = 'flex'; // Add this line
+		plusSign.style.alignItems = 'center'; // Add this line
+		plusSign.style.justifyContent = 'center';
 
 	var minusSign = document.createElement('div');
 
 		minusSign.style.position = 'absolute';
 		minusSign.style.left = '15%';
 		minusSign.style.bottom = '60%';
-		minusSign.style.height = '5%';
-		minusSign.style.width = '8%';
+		minusSign.style.height = '0.4%';
+		minusSign.style.width = '1%';
 		minusSign.style.backgroundSize = 'contain';
 		minusSign.style.backgroundRepeat = 'no-repeat';
 		minusSign.style.backgroundPosition = 'center';
+		
 
 
 
-	var myButton = document.createElement('button');
-	myButton.innerHTML='Reset';
-	myButton.style.marginLeft='50%';
-	topElement.appendChild(myButton);
-	myButton.addEventListener('click', function(){
-		console.log("clicked button");
-    $(slotareaRight).width('200');
 
-	})
-
-	myButton.addEventListener('touchstart', function(){
-		console.log("clicked button");
-    $(slotareaRight).width('200');
-
-	})
 	topElement.appendChild(reset_b);
 	topElement.appendChild(plusSign);
 	topElement.appendChild(minusSign);
@@ -250,6 +240,18 @@ area.appendChild(topElement);
 	minusImg.src= "./minus.png";
 	minusImg.style.height = '3vw';
 	minusImg.style.width = '3vw';
+
+	plusSign.addEventListener("mousedown",function(){
+		var originalWidth = $(slotareaRight).width();
+		$(slotareaRight).width(originalWidth+originalWidth*20/100);
+		originalWidth = $(slotareaRight).width();
+	})
+
+	minusSign.addEventListener("mousedown",function(){
+		var originalWidth = $(slotareaRight).width();
+		$(slotareaRight).width(originalWidth-originalWidth*20/100);
+		originalWidth = $(slotareaRight).width();
+	})
 
 	plusSign.appendChild(plusImg)
 	minusSign.appendChild(minusImg)
