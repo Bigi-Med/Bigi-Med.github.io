@@ -191,9 +191,9 @@ area.appendChild(topElement);
 
 		plusSign.style.position = 'absolute';
 		plusSign.style.left = '20%';
-		plusSign.style.bottom = '47.5%';
-		plusSign.style.height = '5%';
-		plusSign.style.width = '0.1%';
+		plusSign.style.bottom = '50%';
+		plusSign.style.height = '3vw';
+		plusSign.style.width = '3vw';
 		plusSign.style.backgroundSize = 'contain';
 		plusSign.style.backgroundRepeat = 'no-repeat';
 		plusSign.style.backgroundPosition = 'center';
@@ -205,9 +205,9 @@ area.appendChild(topElement);
 
 		minusSign.style.position = 'absolute';
 		minusSign.style.left = '15%';
-		minusSign.style.bottom = '60%';
-		minusSign.style.height = '0.4%';
-		minusSign.style.width = '0.1%';
+		minusSign.style.bottom = '50%';
+		minusSign.style.height = '3vw';
+		minusSign.style.width = '3vw';
 		minusSign.style.backgroundSize = 'contain';
 		minusSign.style.backgroundRepeat = 'no-repeat';
 		minusSign.style.backgroundPosition = 'center';
@@ -233,13 +233,13 @@ area.appendChild(topElement);
 
 	var plusImg = document.createElement("img");
 	plusImg.src= "./plus.png";
-	plusImg.style.height = '3vw';
-	plusImg.style.width = '3vw';
+	plusImg.style.height = '100%';
+	plusImg.style.width = '100%';
 	
 	var minusImg = document.createElement("img");
 	minusImg.src= "./minus.png";
-	minusImg.style.height = '3vw';
-	minusImg.style.width = '3vw';
+	minusImg.style.height = '100%';
+	minusImg.style.width = '100%';
 
 	plusSign.addEventListener("mousedown",function(){
 		var originalWidth = $(slotareaRight).width();
