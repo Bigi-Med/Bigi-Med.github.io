@@ -278,7 +278,7 @@ area.appendChild(topElement);
 		link.href = "https://wordtorque.com/";
 		link.target = "_blank";
 	var wordTorqueImg = document.createElement("img");
-	wordTorqueImg.src = "./wordtorque.png";
+	wordTorqueImg.src = "./wordtorque-removebg.png";
 	wordTorqueImg.style.position= 'absolute';
 	wordTorqueImg.style.right= '6%';
 	wordTorqueImg.style.top= '87%';
@@ -356,7 +356,7 @@ area.appendChild(topElement);
 	prefixFrame.style.border='4px solid';
 	prefixFrame.style.borderColor='#6aa84f';
 	prefixFrame.style.borderRadius='2px';
-	prefixFrame.style.zIndex='5';
+	prefixFrame.style.zIndex='-1';
 	
 	area.appendChild(prefixFrame);
 	
