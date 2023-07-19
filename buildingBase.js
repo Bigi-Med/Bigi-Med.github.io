@@ -190,8 +190,8 @@ area.appendChild(topElement);
 	var plusSign = document.createElement('div');
 
 		plusSign.style.position = 'absolute';
-		plusSign.style.right = '20%';
-		plusSign.style.bottom = '60%';
+		plusSign.style.left = '20%';
+		plusSign.style.bottom = '47.5%';
 		plusSign.style.height = '5%';
 		plusSign.style.width = '0.1%';
 		plusSign.style.backgroundSize = 'contain';
@@ -207,7 +207,7 @@ area.appendChild(topElement);
 		minusSign.style.left = '15%';
 		minusSign.style.bottom = '60%';
 		minusSign.style.height = '0.4%';
-		minusSign.style.width = '1%';
+		minusSign.style.width = '0.1%';
 		minusSign.style.backgroundSize = 'contain';
 		minusSign.style.backgroundRepeat = 'no-repeat';
 		minusSign.style.backgroundPosition = 'center';
@@ -269,11 +269,7 @@ area.appendChild(topElement);
 	minusSign.appendChild(minusImg)
 	reset_b.appendChild(resetImg)
 	logo.appendChild(logoImg);
-// const fontFile = new FontFace(
-//   "Didact Gothic",
-//   "url(https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap)"
-// );
-	
+
 		var link = document.createElement("a");
 		link.href = "https://wordtorque.com/";
 		link.target = "_blank";
