@@ -128,6 +128,7 @@ area.appendChild(topElement);
 	slotarea_c.appendChild(slotareaRight);
 	slotarea_c.appendChild(beforeSlot);
 	slotarea_c.appendChild(afterSlot);
+	var originalWidthGlobal = $(slotareaRight).width();
 	const myboxRect = slotareaRight.getBoundingClientRect();
 	const slotBoxOriginal = /*boxRect.left +*/ myboxRect.width;
 	var oldWidth = slotBoxOriginal;
@@ -187,30 +188,29 @@ area.appendChild(topElement);
         reset_b.style.backgroundRepeat = 'no-repeat';
         reset_b.style.backgroundPosition = 'center';
 
+
 	var plusSign = document.createElement('div');
 
 		plusSign.style.position = 'absolute';
 		plusSign.style.left = '20%';
-		plusSign.style.bottom = '50%';
+		plusSign.style.bottom = '40%';
 		plusSign.style.height = '3vw';
 		plusSign.style.width = '3vw';
 		plusSign.style.backgroundSize = 'contain';
 		plusSign.style.backgroundRepeat = 'no-repeat';
 		plusSign.style.backgroundPosition = 'center';
-		plusSign.style.display = 'flex'; // Add this line
-		plusSign.style.alignItems = 'center'; // Add this line
-		plusSign.style.justifyContent = 'center';
 
 	var minusSign = document.createElement('div');
 
 		minusSign.style.position = 'absolute';
 		minusSign.style.left = '15%';
-		minusSign.style.bottom = '50%';
+		minusSign.style.bottom = '40%';
 		minusSign.style.height = '3vw';
 		minusSign.style.width = '3vw';
 		minusSign.style.backgroundSize = 'contain';
 		minusSign.style.backgroundRepeat = 'no-repeat';
 		minusSign.style.backgroundPosition = 'center';
+
 		
 
 
@@ -232,9 +232,9 @@ area.appendChild(topElement);
 	resetImg.style.transform = 'rotate(-30deg)';
 
 	var plusImg = document.createElement("img");
-	plusImg.src= "./plus.png";
-	plusImg.style.height = '100%';
-	plusImg.style.width = '100%';
+	plusImg.src= "./plus-removebg-preview.png";
+	plusImg.style.height = '3vw';
+	plusImg.style.width = '3vw';
 	
 	var minusImg = document.createElement("img");
 	minusImg.src= "./minus.png";
@@ -243,25 +243,25 @@ area.appendChild(topElement);
 
 	plusSign.addEventListener("mousedown",function(){
 		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth+originalWidth*20/100);
+		$(slotareaRight).width(originalWidth+originalWidth*36/100);
 		originalWidth = $(slotareaRight).width();
 	})
 
 	plusSign.addEventListener("touchstart",function(){
 		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth+originalWidth*20/100);
+		$(slotareaRight).width(originalWidth+originalWidth*36/100);
 		originalWidth = $(slotareaRight).width();
 	})
 
 	minusSign.addEventListener("mousedown",function(){
 		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth-originalWidth*20/100);
+		$(slotareaRight).width(originalWidth-originalWidth*36/100);
 		originalWidth = $(slotareaRight).width();
 	})
 
 	minusSign.addEventListener("touchstart",function(){
 		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth-originalWidth*20/100);
+		$(slotareaRight).width(originalWidth-originalWidth*36/100);
 		originalWidth = $(slotareaRight).width();
 	})
 
@@ -308,11 +308,12 @@ area.appendChild(topElement);
 	buildingBase.appendChild(buildingBaseImg);
 
 	reset_b.addEventListener('touchstart',function(){
-			for(var i=0;i<float_list.length;i++)float_list[i]();
+		$(slotareaRight).width(originalWidthGlobal);
+		for(var i=0;i<float_list.length;i++)float_list[i]();
 		})
 	reset_b.addEventListener('mousedown',function(){
-		console.log("clicked");
-			for(var i=0;i<float_list.length;i++)float_list[i]();
+		$(slotareaRight).width(originalWidthGlobal);
+		for(var i=0;i<float_list.length;i++)float_list[i]();
 		})
 	
 	// var info_b=document.createElement('div');
