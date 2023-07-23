@@ -243,25 +243,25 @@ area.appendChild(topElement);
 
 	plusSign.addEventListener("mousedown",function(){
 		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth+originalWidth*36/100);
+		$(slotareaRight).width(originalWidth+originalWidthGlobal*36/100);
 		originalWidth = $(slotareaRight).width();
 	})
 
 	plusSign.addEventListener("touchstart",function(){
 		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth+originalWidth*36/100);
+		$(slotareaRight).width(originalWidth+originalWidthGlobal*36/100);
 		originalWidth = $(slotareaRight).width();
 	})
 
 	minusSign.addEventListener("mousedown",function(){
 		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth-originalWidth*36/100);
+		$(slotareaRight).width(originalWidth-originalWidthGlobal*36/100);
 		originalWidth = $(slotareaRight).width();
 	})
 
 	minusSign.addEventListener("touchstart",function(){
 		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth-originalWidth*36/100);
+		$(slotareaRight).width(originalWidth-originalWidthGlobal*36/100);
 		originalWidth = $(slotareaRight).width();
 	})
 
