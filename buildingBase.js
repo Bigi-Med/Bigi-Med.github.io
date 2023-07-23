@@ -203,9 +203,9 @@ area.appendChild(topElement);
 
 		// Add the appropriate event listener based on the device type
 		if (isTouchDevice) {
-		plusSign.addEventListener('touchstart', handlePlusButtonClick);
+			plusSign.addEventListener('touchstart', handlePlusButtonClick);
 		} else {
-		plusSign.addEventListener('click', handlePlusButtonClick);
+			plusSign.addEventListener('click', handlePlusButtonClick);
 		}
 
 	var minusSign = document.createElement('div');
@@ -218,6 +218,14 @@ area.appendChild(topElement);
 		minusSign.style.backgroundSize = 'contain';
 		minusSign.style.backgroundRepeat = 'no-repeat';
 		minusSign.style.backgroundPosition = 'center';
+		var isTouchDevice = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+
+		// Add the appropriate event listener based on the device type
+		if (isTouchDevice) {
+			minusSign.addEventListener('touchstart', handleMinusButtonClick);
+		} else {
+			minusSign.addEventListener('click', handlePlusButtonClick);
+		}
 
 		
 
@@ -262,18 +270,13 @@ area.appendChild(topElement);
 		event.stopPropagation();
 	  }
 
-	// plusSign.addEventListener("touchstart",function(){
-	// 	var originalWidth = $(slotareaRight).width();
-	// 	$(slotareaRight).width(originalWidth+originalWidthGlobal*36/100);
-	// 	originalWidth = $(slotareaRight).width();
-	// })
-
-	minusSign.addEventListener("mousedown",function(){
-		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth-originalWidthGlobal*36/100);
-		originalWidth = $(slotareaRight).width();
-	})
-
+	  function handleMinusButtonClick(event) {
+		// Perform the action you want the minus button to do here
+			var originalWidth = $(slotareaRight).width();
+			$(slotareaRight).width(originalWidth-originalWidthGlobal*36/100);
+			originalWidth = $(slotareaRight).width();
+		event.stopPropagation();
+	  }
 
 
 	plusSign.appendChild(plusImg)
