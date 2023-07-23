@@ -267,11 +267,7 @@ area.appendChild(topElement);
 		originalWidth = $(slotareaRight).width();
 	})
 
-	minusSign.addEventListener("touchstart",function(){
-		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth-originalWidthGlobal*36/100);
-		originalWidth = $(slotareaRight).width();
-	})
+
 
 	plusSign.appendChild(plusImg)
 	minusSign.appendChild(minusImg)
