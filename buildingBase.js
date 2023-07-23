@@ -199,7 +199,14 @@ area.appendChild(topElement);
 		plusSign.style.backgroundSize = 'contain';
 		plusSign.style.backgroundRepeat = 'no-repeat';
 		plusSign.style.backgroundPosition = 'center';
+		var isTouchDevice = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+
+		// Add the appropriate event listener based on the device type
+		if (isTouchDevice) {
+		plusSign.addEventListener('touchstart', handlePlusButtonClick);
+		} else {
 		plusSign.addEventListener('click', handlePlusButtonClick);
+		}
 
 	var minusSign = document.createElement('div');
 
