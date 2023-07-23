@@ -200,7 +200,6 @@ area.appendChild(topElement);
 		plusSign.style.backgroundRepeat = 'no-repeat';
 		plusSign.style.backgroundPosition = 'center';
 		plusSign.addEventListener('click', handlePlusButtonClick);
-		plusSign.addEventListener('touchstart', handlePlusButtonClick);
 
 	var minusSign = document.createElement('div');
 
