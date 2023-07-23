@@ -199,6 +199,8 @@ area.appendChild(topElement);
 		plusSign.style.backgroundSize = 'contain';
 		plusSign.style.backgroundRepeat = 'no-repeat';
 		plusSign.style.backgroundPosition = 'center';
+		plusSign.addEventListener('click', handlePlusButtonClick);
+		plusSign.addEventListener('touchstart', handlePlusButtonClick);
 
 	var minusSign = document.createElement('div');
 
@@ -241,11 +243,18 @@ area.appendChild(topElement);
 	minusImg.style.height = '100%';
 	minusImg.style.width = '100%';
 
-	plusSign.addEventListener("mousedown",function(){
-		var originalWidth = $(slotareaRight).width();
-		$(slotareaRight).width(originalWidth+originalWidthGlobal*36/100);
-		originalWidth = $(slotareaRight).width();
-	})
+	
+
+
+	function handlePlusButtonClick(event) {
+		// Perform the action you want the plus button to do here
+			var originalWidth = $(slotareaRight).width();
+			$(slotareaRight).width(originalWidth+originalWidthGlobal*36/100);
+			originalWidth = $(slotareaRight).width();
+
+		// Prevent event propagation (comment this line if you want the event to propagate)
+		event.stopPropagation();
+	  }
 
 	// plusSign.addEventListener("touchstart",function(){
 	// 	var originalWidth = $(slotareaRight).width();
