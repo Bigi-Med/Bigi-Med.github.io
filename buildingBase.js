@@ -224,7 +224,7 @@ area.appendChild(topElement);
 		if (isTouchDevice) {
 			minusSign.addEventListener('touchstart', handleMinusButtonClick);
 		} else {
-			minusSign.addEventListener('click', handlePlusButtonClick);
+			minusSign.addEventListener('click', handleMinusButtonClick);
 		}
 
 		
