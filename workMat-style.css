@@ -207,7 +207,7 @@
     text-align: center;
     user-select: none;
     font-size:2.5vw;
-    width:100%;
+    width:80%;
     font-family: 'My Font';
     font-weight:800;
     border : 3px solid;
@@ -219,7 +219,7 @@
 
 
 .parent-draggable{
-    width:15%;
+    width:10%;
 }
 
 .floating-vwl{
@@ -228,7 +228,7 @@
     background-color: white;
     user-select: none;
     font-weight:800;
-    width:100%;
+    width:80%;
     font-size:2.5vw;
     border : 3px solid;
     border-color: #cc3600;
@@ -241,7 +241,7 @@
     user-select: none;
     font-weight:800;
     text-align: center;
-    width:100%;
+    width:80%;
     font-size:2.5vw;
     border : 3px solid;
     background-color: white;
@@ -281,7 +281,7 @@
     user-select: none;
     font-weight:800;
     text-align: center;
-    width:100%;
+    width:80%;
     font-size:2.5vw;
     border : 3px solid;
     background-color: white;
