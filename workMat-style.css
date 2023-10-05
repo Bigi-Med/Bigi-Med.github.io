@@ -16,14 +16,18 @@
 .offset-left{
     margin-left:20%;
 }
-.slot-area{
-    margin-left:1%;
-    margin-right:1%;
-    padding-left:5%;
-}
 
 .undo-offset{
     margin-left:2%;
+}
+
+.slot-area{
+    border-color: lightgray;
+    border-style: solid;
+    padding: 45px;
+    width:100%;
+    align-items: center;
+    padding-right:10%;
 }
 
 #undoButton{
@@ -144,17 +148,17 @@
     padding-top:100px;
     border-top: none;
     border-right: none;
-    width:120%;
+    width:100%;
     border-left: none;
 }
 
-.slotArea{
+/* .slotArea{
     border-color: lightgray;
     border-style: solid;
     padding: 45px;
-    width:85%;
+    width:100%;
     align-items: center;
-}
+} */
 
 @media screen and (max-width : 1080px){
     .slotArea{
@@ -242,7 +246,7 @@
     background-color: white;
     user-select: none;
     font-weight:800;
-    width:100%;
+    width:95%;
     font-size:2.5vw;
     border : 3px solid;
     border-color: #cc3600;
