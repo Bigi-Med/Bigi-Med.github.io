@@ -183,6 +183,14 @@
     }
 }
 
+@media screen and (max-width:1090) {
+    .word-torque{
+        position: absolute;
+        bottom: 0;
+        right:0;
+    }
+}
+
  .prefixes {
     margin-right:2%;
     max-width: 100% !important;
