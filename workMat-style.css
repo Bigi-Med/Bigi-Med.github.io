@@ -70,11 +70,6 @@
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .top-offset {
-        margin-top: 0.3%;
-    }
-}
 
 .in-between-offset{
     margin-top:1%;
@@ -149,7 +144,14 @@
 
 @media screen and (max-width: 1080px) {
     .slotArea {
-        width:110%;
+        width:150%;
+    }
+    
+}
+
+@media screen and (max-width: 1080px) {
+    .slot-area {
+        margin-right:6%;
     }
     
 }
