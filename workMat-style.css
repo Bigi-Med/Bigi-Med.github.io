@@ -222,6 +222,10 @@
     width:15%;
 }
 
+.cns-vwl-contain{
+    width:80%;
+}
+
 .floating-vwl{
     font-family: 'My Font';
     text-align: center;
