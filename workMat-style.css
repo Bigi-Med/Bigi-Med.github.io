@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'My Font';
+    src: url('assets/DidactGothic-Regular.ttf') format('truetype');
+  }
+
+  body {
+    overflow-y: auto; /* Allow horizontal overflow with a scrollbar */
+}
+
+.title{
+    font-family: 'My Font';
+    color:#0096cc
+}
+
+
+.offset-left{
+    margin-left:20%;
+}
+.slot-area{
+    margin-left:1%
+}
+
+.undo-offset{
+    margin-left:2%;
+}
+
+#undoButton{
+    cursor: pointer;
+}
+
+#minusButton{
+    cursor: pointer;
+}
+
+#plusButton{
+    cursor: pointer;
+}
+
+.top-offset{
+    margin-top:1.5%
+}
+@media screen and (max-width: 1080px) {
+    .top-offset {
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width: 1496px) {
+    .top-offset {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .top-offset {
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 1272px) {
+    .top-offset {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 1129px) {
+    .top-offset {
+        margin-top: 6%;
+    }
+}
+
+.in-between-offset{
+    margin-top:1%;
+}
+
+@media screen and (max-width: 1080px) {
+    .in-between-offset {
+        margin-top: 1%;
+    }
+}
+
+.prf-parent{
+    width:40%;
+    margin-right:8%;
+}
+
+@media screen and (max-width: 869px) {
+    .prf-parent {
+        width:40%;
+        margin-right:7%;
+    }
+}
+    
+
+.floating-cns{
+    text-align: center;
+    width:15.5%;
+    user-select: none;
+    font-size:2.5vw;
+    font-family: 'My Font';
+    font-weight:800;
+    border : 3px solid;
+    border-color: #0096cc;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.inner{
+    position: absolute;
+}
+
+.draggable-element {
+    cursor: pointer;
+    position: relative;
+}
+
+.floating-cns[draggable="true"] {
+    cursor: pointer;
+  }
+
+.in-between-excpetion-prf{
+    margin-top:30%;
+}
+
+.in-between-excpetion{
+    margin-top:30%;
+}
+
+.in-between-offset-prf{
+    margin-top:10%;
+}
+
+.prf-row{
+    width:180%;
+    padding-right:10px;
+}
+
+.slot{
+    border-color: lightgray;
+    border-style: solid;
+    padding-top:100px;
+    border-top: none;
+    border-right: none;
+    width:120%;
+    border-left: none;
+}
+
+.slotArea{
+    border-color: lightgray;
+    border-style: solid;
+    padding: 45px;
+    width:85%;
+    margin-left:6%;
+}
+
+@media screen and (max-width : 1080px){
+    .slotArea{
+        width: 100%;
+    }
+}
+
+
+.mag-meg{
+    float: right;
+}
+
+.word-torque {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right:4%;
+    margin-bottom:2%;
+}
+
+@media screen and (min-width:1637px) {
+    .word-torque{
+        position: absolute;
+        bottom: 0;
+        right:0;
+        margin-right:1%;
+        margin-bottom:0%;
+    }
+}
+
+ .prefixes {
+    margin-right:2%;
+    max-width: 100% !important;
+    float: right;
+    border: 3px solid; /*Add this line to set the border */
+    border-color: #6aa84f;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:5%;
+    padding-left:0%;
+    
+} 
+
+@media screen and (max-width: 1080px) {
+    .prefixes {
+        margin-right:0px;
+        height:150%;
+    }
+}
+
+.floating-cns{
+    text-align: center;
+    user-select: none;
+    font-size:2.5vw;
+    width:100%;
+    font-family: 'My Font';
+    font-weight:800;
+    border : 3px solid;
+    border-color: #0096cc;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.parent-draggable{
+    width:15%;
+}
+
+.floating-vwl{
+    font-family: 'My Font';
+    text-align: center;
+    background-color: white;
+    user-select: none;
+    font-weight:800;
+    width:100%;
+    font-size:2.5vw;
+    border : 3px solid;
+    border-color: #cc3600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.floating-prf{
+    font-family: 'My Font';
+    user-select: none;
+    font-weight:800;
+    text-align: center;
+    width:100%;
+    font-size:2.5vw;
+    border : 3px solid;
+    background-color: white;
+    border-color: #6aa84f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.floating-empty-vwl{
+    text-align: center;
+    width:100%;
+    user-select: none;
+    background-color: white;
+    font-size:2.5vw;
+    border : 3px solid;
+    border-color: #cc3600;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+}
+
+.floating-empty-cns{
+    text-align: center;
+    width:100%;
+    user-select: none;
+    background-color: white;
+    font-size:2.5vw;
+    border : 3px solid;
+    border-color: #0096cc;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+}
+
+.floating-empty-prf{
+    font-family: 'My Font';
+    user-select: none;
+    font-weight:800;
+    text-align: center;
+    width:100%;
+    font-size:2.5vw;
+    border : 3px solid;
+    background-color: white;
+    border-color: #6aa84f;
+    border-radius: 10px;
+    /* color:white; */
+    cursor: pointer;
+}
+
+
+  
