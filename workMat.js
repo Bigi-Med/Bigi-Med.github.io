@@ -29,6 +29,7 @@ $(document).ready(function() {
 
     // Function to move the dragged element
     function moveElement(event) {
+        event.preventDefault();
         if (!isDragging) return;
 
         const roundedLeft = Math.round(event.clientX - offset.x);
@@ -107,6 +108,9 @@ $(document).ready(function() {
         $(".slot-right").css("margin-left",0);
 
     });
+
+    $(".draggable-element, .draggable-element-prf, #plusButton, #minusButton, #undoButton").css("touch-action", "none");
+
 });
 
 

@@ -93,20 +93,6 @@
 }
     
 
-.floating-cns{
-    text-align: center;
-    width:15.5%;
-    user-select: none;
-    font-size:2.5vw;
-    font-family: 'My Font';
-    font-weight:800;
-    border : 3px solid;
-    border-color: #0096cc;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: white;
-}
-
 .inner{
     position: absolute;
 }
@@ -218,6 +204,14 @@
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media  screen and (max-width: 1080px) {
+    .floating-cns {
+        width:120%;
+        margin-right:10%;
+    }
+    
 }
 
 
