@@ -22,12 +22,7 @@
 }
 
 .slot-area{
-    border-color: lightgray;
-    border-style: solid;
-    padding: 45px;
-    width:100%;
-    align-items: center;
-    padding-right:10%;
+
 }
 
 #undoButton{
@@ -152,18 +147,12 @@
     border-left: none;
 }
 
-/* .slotArea{
+.slotArea{
     border-color: lightgray;
     border-style: solid;
     padding: 45px;
     width:100%;
     align-items: center;
-} */
-
-@media screen and (max-width : 1080px){
-    .slotArea{
-        width: 100%;
-    }
 }
 
 
@@ -221,7 +210,7 @@
     text-align: center;
     user-select: none;
     font-size:2.5vw;
-    width:100%;
+    width:95%;
     font-family: 'My Font';
     font-weight:800;
     border : 3px solid;
@@ -259,7 +248,7 @@
     user-select: none;
     font-weight:800;
     text-align: center;
-    width:100%;
+    width:95%;
     font-size:2.5vw;
     border : 3px solid;
     background-color: white;
@@ -270,7 +259,7 @@
 
 .floating-empty-vwl{
     text-align: center;
-    width:100%;
+    width:95%;
     user-select: none;
     background-color: white;
     font-size:2.5vw;
@@ -283,7 +272,7 @@
 
 .floating-empty-cns{
     text-align: center;
-    width:100%;
+    width:95%;
     user-select: none;
     background-color: white;
     font-size:2.5vw;
@@ -299,7 +288,7 @@
     user-select: none;
     font-weight:800;
     text-align: center;
-    width:100%;
+    width:95%;
     font-size:2.5vw;
     border : 3px solid;
     background-color: white;
