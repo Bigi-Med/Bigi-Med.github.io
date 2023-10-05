@@ -221,14 +221,6 @@
     cursor: pointer;
 }
 
-@media  screen and (max-width: 1080px) {
-    .floating-cns {
-        width:110%;
-    }
-    
-}
-
-
 .parent-draggable{
     width:15%;
 }
