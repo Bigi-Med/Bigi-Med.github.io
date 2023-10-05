@@ -88,9 +88,9 @@ $(document).ready(function() {
     });
 
     // Add event listeners to the draggable elements
-    $(".draggable-element, .draggable-element-prf").mousedown(startDragging);
-    $(document).mousemove(moveElement);
-    $(document).mouseup(stopDragging);
+    $(".draggable-element, .draggable-element-prf").on("mousedown touchstart", startDragging);
+    $(document).on("mousemove touchmove", moveElement);
+    $(document).on("mouseup touchend", stopDragging);
 
     // Add click event listener to the reset button
     $("#undoButton").click(function() {
