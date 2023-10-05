@@ -13,13 +13,13 @@ $(document).ready(function() {
         // Get the current position of the element
         const position = currentElement.position();
         console.log("position" , position);
-        const mouseX = event.clientX;
-        const mouseY = event.clientY;
+        const inputX = event.type.startsWith("touch") ? event.touches[0].clientX : event.clientX;
+        const inputY = event.type.startsWith("touch") ? event.touches[0].clientY : event.clientY;
         
         // Calculate the offset
         offset = {
-            x: mouseX -position.left,
-            y: mouseY - position.top
+            x: inputX -position.left,
+            y: inputY - position.top
         };
         console.log("offset" ,offset);
 
@@ -32,8 +32,11 @@ $(document).ready(function() {
         event.preventDefault();
         if (!isDragging) return;
 
-        const roundedLeft = Math.round(event.clientX - offset.x);
-        const roundedTop = Math.round(event.clientY - offset.y);
+        const inputX = event.type.startsWith("touch") ? event.touches[0].clientX : event.clientX;
+        const inputY = event.type.startsWith("touch") ? event.touches[0].clientY : event.clientY;
+        const roundedLeft = Math.round(inputX - offset.x);
+        const roundedTop = Math.round(inputY - offset.y);
+
 
         // Move the element with the mouse  
         currentElement.css("left", roundedLeft);

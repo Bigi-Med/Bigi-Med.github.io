@@ -208,8 +208,7 @@
 
 @media  screen and (max-width: 1080px) {
     .floating-cns {
-        width:120%;
-        margin-right:10%;
+        width:110%;
     }
     
 }
@@ -217,6 +216,13 @@
 
 .parent-draggable{
     width:15%;
+}
+
+@media screen and (max-width: 1080px) {
+    .parent-draggable {
+        margin-right:0%;
+    }
+    
 }
 
 .cns-vwl-contain{
