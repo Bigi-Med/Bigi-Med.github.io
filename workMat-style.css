@@ -141,6 +141,13 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1080px) {
+    .slotArea {
+        width:110%;
+    }
+    
+}
+
 
 .mag-meg{
     float: right;
