@@ -44,23 +44,23 @@
     }
 } */
 
-@media screen and (max-width: 1496px) {
+/* @media screen and (max-width: 1496px) {
     .top-offset {
         margin-top: 3%;
     }
-}
+} */
 
-@media screen and (max-width: 1370px) {
+/* @media screen and (max-width: 1370px) {
     .top-offset {
         margin-top: 4%;
     }
-}
+} */
 
-@media screen and (max-width: 1272px) {
+/* @media screen and (max-width: 1272px) {
     .top-offset {
         margin-top: 5%;
     }
-}
+} */
 
 @media screen and (max-width: 1366px) {
     .top-offset {
@@ -68,11 +68,11 @@
     }
 }
 
-@media screen and (max-width: 1129px) {
+/* @media screen and (max-width: 1129px) {
     .top-offset {
         margin-top: 6%;
     }
-}
+} */
 
 
 .in-between-offset{
@@ -223,6 +223,13 @@
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+    .floating-cns {
+        width:100%;
+    }
+    
 }
 
 .parent-draggable{
