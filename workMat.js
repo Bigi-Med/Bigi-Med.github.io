@@ -58,7 +58,7 @@ $(document).ready(function() {
     // Function to increase the rectangle size
     $("#plusButton").click(function() {
         
-        if(window.innerWidth <=1080){
+        if(window.innerWidth <=1366){
             newWidth = originalWidthChange + originalWidthFix*60/100; // Increase the width by 10 pixels (adjust as needed)
         }
         else{

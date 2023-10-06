@@ -47,6 +47,10 @@
     margin-top:1.5%
 }
 
+.slot-area{
+    margin-right:3.5%;
+}
+
 /* @media screen and (max-width: 1080px) {
     .top-offset {
         margin-top: 7%;
@@ -153,7 +157,7 @@
     border-color: lightgray;
     border-style: solid;
     padding: 45px;
-    width:100%;
+    width:120%;
     align-items: center;
 }
 
