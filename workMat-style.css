@@ -47,13 +47,9 @@
     margin-top:1.5%
 }
 
-@media screen and (min-width: 1800px) {
-    .slot-area{
-        margin-right:3.5%;
-    }
-    
+.slot-area{
+    margin-right:3.5%;
 }
-
 
 /* @media screen and (max-width: 1080px) {
     .top-offset {
@@ -174,7 +170,7 @@
 
 @media screen and (max-width: 1366px) {
     .slot-area {
-        margin-right:1%;
+        margin-right:0.4%;
     }
     
 }
