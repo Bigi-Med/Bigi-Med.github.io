@@ -62,6 +62,12 @@
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .top-offset {
+        margin-top: 3%;
+    }
+}
+
 @media screen and (max-width: 1129px) {
     .top-offset {
         margin-top: 6%;
