@@ -213,13 +213,6 @@
     
 } 
 
-@media screen and (max-width: 1366px) {
-    .prefixes {
-        margin-top:0.2% !important
-    }
-    
-}
-
 @media screen and (max-width: 1080px) {
     .prefixes {
         margin-right:0px;
