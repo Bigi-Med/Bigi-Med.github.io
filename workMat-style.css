@@ -63,7 +63,7 @@
 } */
 
 @media screen and (max-width: 1366px) {
-    .top-offset {
+    .top-offset-solo {
         margin-top: 0.5%;
     }
 }
