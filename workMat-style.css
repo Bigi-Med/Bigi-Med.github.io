@@ -9,7 +9,15 @@
 
 .title{
     font-family: 'My Font';
-    color:#0096cc
+    color:#0096cc;
+    /* margin-bottom:0%; */
+}
+
+@media screen and (max-width: 1400px) {
+    .title {
+        margin-bottom:-2%;
+    }
+    
 }
 
 
@@ -65,6 +73,12 @@
 @media screen and (max-width: 1366px) {
     .top-offset-solo {
         margin-top: 0.5%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .top-offset {
+        margin-top: 3%;
     }
 }
 
