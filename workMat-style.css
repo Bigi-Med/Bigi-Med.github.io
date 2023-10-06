@@ -192,7 +192,7 @@
     }
 }
 
-@media screen and (max-width:1090) {
+@media screen and (max-width:1366) {
     .word-torque{
         position: absolute;
         bottom: 0;
