@@ -47,7 +47,7 @@
     margin-top:1.5%
 }
 
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
     .top-offset {
         margin-top: 7%;
     }
@@ -76,6 +76,13 @@
     .top-offset {
         margin-top: 6%;
     }
+} */
+
+@media screen and (max-width: 1500px) {
+    .top-offset {
+        margin-top: 0.5%;
+    }
+    
 }
 
 
