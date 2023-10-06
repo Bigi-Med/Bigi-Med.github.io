@@ -21,9 +21,7 @@
     margin-left:2%;
 }
 
-.slot-area{
 
-}
 
 #undoButton{
     cursor: pointer;
@@ -144,12 +142,12 @@
 
 @media screen and (max-width: 1080px) {
     .slotArea {
-        width:125%;
+        width:105%;
     }
     
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     .slot-area {
         margin-right:1%;
     }
