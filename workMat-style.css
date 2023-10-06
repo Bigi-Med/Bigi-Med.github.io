@@ -189,9 +189,7 @@
 
 @media screen and (max-width:1366px) {
     .word-torque{
-        position: absolute;
-        bottom: 0;
-        right:0;
+        display: none;
     }
 }
 
