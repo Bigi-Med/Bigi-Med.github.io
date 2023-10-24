@@ -168,9 +168,9 @@
     
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1500px) {
     .slot-area {
-        margin-right:0.4%;
+        margin-right:5%;
     }
     
 }
