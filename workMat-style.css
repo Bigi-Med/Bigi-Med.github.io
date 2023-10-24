@@ -82,6 +82,14 @@
     }
 } */
 
+@media screen and (max-width: 1500px) {
+    .top-offset {
+        margin-top: 6%;
+    }
+    
+}
+
+
 .in-between-offset{
     margin-top:1%;
 }
@@ -153,6 +161,12 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1080px) {
+    .slotArea {
+        width:105%;
+    }
+    
+}
 
 @media screen and (max-width: 1366px) {
     .slot-area {
