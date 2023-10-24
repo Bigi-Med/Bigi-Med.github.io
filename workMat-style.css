@@ -177,7 +177,8 @@
 
 
 .mag-meg{
-    float: right;
+    /* float: right; */
+    /* margin-bottom:2% */
 }
 
 .word-torque {
