@@ -161,12 +161,12 @@
     align-items: center;
 }
 
-@media screen and (max-width: 1500px) {
+/* @media screen and (max-width: 1500px) {
     .slotArea {
-        width:105%;
+        width:100%;
     }
     
-}
+} */
 
 @media screen and (max-width: 1366px) {
     .slot-area {
