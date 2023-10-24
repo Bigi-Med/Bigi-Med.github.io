@@ -180,11 +180,11 @@
     float: right;
 }
 
-@media screen and (max-width:1500px) {
+/* @media screen and (max-width:1500px) {
     .mag-meg{
         display: none;
     }
-}
+} */
 
 .word-torque {
     position: absolute;
