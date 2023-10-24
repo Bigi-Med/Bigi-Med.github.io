@@ -153,13 +153,6 @@
     align-items: center;
 }
 
-@media screen and (max-width: 1500px) {
-    .slotArea {
-        width:100%;
-        margin-right:50%;
-    }
-    
-}
 
 @media screen and (max-width: 1366px) {
     .slot-area {
@@ -173,11 +166,11 @@
     float: right;
 }
 
-/* @media screen and (max-width:1500px) {
+@media screen and (max-width:1500px) {
     .mag-meg{
         display: none;
     }
-} */
+}
 
 .word-torque {
     position: absolute;
