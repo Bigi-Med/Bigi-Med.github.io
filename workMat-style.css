@@ -163,14 +163,14 @@
 
 @media screen and (max-width: 1080px) {
     .slotArea {
-        width:105%;
+        width:110%;
     }
     
 }
 
 @media screen and (max-width: 1500px) {
     .slot-area {
-        margin-right:2%;
+        margin-right:0.4%;
     }
     
 }
