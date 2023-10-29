@@ -77,7 +77,7 @@ $(document).ready(function() {
 
     $("#minusButton").click(function() {
         if(window.innerWidth <=1080){
-            newWidth = originalWidthChange- originalWidthFix*60/100; // Increase the width by 10 pixels (adjust as needed)
+            newWidth = originalWidthChange- originalWidthFix*100/100; // Increase the width by 10 pixels (adjust as needed)
         }
         else{
             newWidth = originalWidthChange - originalWidthFix*45/100; // Increase the width by 10 pixels (adjust as needed)
