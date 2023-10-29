@@ -59,7 +59,7 @@ $(document).ready(function() {
     $("#plusButton").click(function() {
         
         if(window.innerWidth <=1500){
-            newWidth = originalWidthChange + originalWidthFix*60/100; // Increase the width by 10 pixels (adjust as needed)
+            newWidth = originalWidthChange + originalWidthFix*100/100; // Increase the width by 10 pixels (adjust as needed)
         }
         else{
             newWidth = originalWidthChange + originalWidthFix*45/100; // Increase the width by 10 pixels (adjust as needed)
@@ -76,8 +76,8 @@ $(document).ready(function() {
     // Function to decrease the rectangle size
 
     $("#minusButton").click(function() {
-        if(window.innerWidth <=1080){
-            newWidth = originalWidthChange- originalWidthFix*100/100; // Increase the width by 10 pixels (adjust as needed)
+        if(window.innerWidth <=1500){
+            newWidth = originalWidthChange- originalWidthFix*60/100; // Increase the width by 10 pixels (adjust as needed)
         }
         else{
             newWidth = originalWidthChange - originalWidthFix*45/100; // Increase the width by 10 pixels (adjust as needed)
